@@ -1,0 +1,8 @@
+{
+  "name": "lateral",
+  "private": true,
+  "type": "module",
+  "description": "Lateral, a daily NFL connection game. playlateral.com",
+  "scripts": { "test": "node tools/test-rank.mjs" },
+  "dependencies": { "@netlify/blobs": "11.1.0" }
+}
