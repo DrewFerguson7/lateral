@@ -144,7 +144,7 @@ h1 a{color:inherit;text-decoration:none;cursor:pointer}h1 a:focus-visible{outlin
 @media(max-width:620px){.modecards{grid-template-columns:minmax(0,1fr)}.mc{padding:13px 16px}}
 #tv2+.acbox{left:auto}
 .rank{display:grid;gap:6px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg)}.rank b{font:800 20px/1.15 var(--disp);text-transform:uppercase;letter-spacing:.3px}.rank b em{font-style:normal;color:var(--acc-text)}
-.rank>span,.rx{font-size:13px;color:var(--mu)}.rank svg{width:100%;height:64px;display:block}.rank rect{fill:var(--mu);opacity:.35}.rank rect.me{fill:var(--acc);opacity:1}.rx{display:flex;justify-content:space-between;gap:8px}.home .vs b{white-space:nowrap}.home .vs{align-items:end}
+.rank>span,.rx{font-size:13px;color:var(--mu)}.rank svg{width:100%;height:auto;display:block;overflow:visible}.rank .area{fill:var(--mu);opacity:.18}.rank .area.me{fill:var(--acc);opacity:.55}.rank .crv{fill:none;stroke:var(--mu);stroke-width:1.5;vector-effect:non-scaling-stroke}.rank .mk{stroke:var(--acc-text);stroke-width:2;vector-effect:non-scaling-stroke}.rank .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2;vector-effect:non-scaling-stroke}.rx{display:flex;justify-content:space-between;gap:8px;white-space:nowrap;margin-top:-2px}.home .vs b{white-space:nowrap}.home .vs{align-items:end}
 .chain>div:not(.p):not(.next){margin:1px 0}.chain>*{scroll-margin-bottom:200px}
 .dock.stick{position:sticky;bottom:0;z-index:10;background:var(--bg);padding:6px 0 calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -14px 18px -6px var(--bg)}
 .dock.stick .msg:empty{min-height:0}
@@ -665,7 +665,7 @@ Ed Reed>T:NYJ>Ronnie Lott>C:USC>Amon-Ra St. Brown~Ed Reed>C:Miami>Devin Hester>#
 Ed Reed>T:NYJ>Brett Favre>T:MIN>Jared Allen~Ed Reed>C:Miami>Al-Quadin Muhammad>#69>Jared Allen~0~Tony Gonzalez;Randy Moss;Willie Roaf~Tony Gonzalez;Brett Favre;Randy Moss
 Patrick Mahomes>T:KC>Ronnie Lott>T:SF>Anquan Boldin~Patrick Mahomes>#15>Golden Tate>#81>Anquan Boldin~0~Ray Lewis;Larry Fitzgerald;Ed Reed~Ray Lewis;Larry Fitzgerald;Ed Reed
 Donovan McNabb>T:WAS>Deion Sanders>T:BAL>Ray Rice~Donovan McNabb>#5>Stephon Gilmore>#27>Ray Rice~1~Ray Lewis;Ed Reed;Kyle Juszczyk~Ray Lewis;Ed Reed;Kyle Juszczyk
-Demaryius Thomas>#88>Tony Gonzalez>T:KC>Jared Allen~Demaryius Thomas>C:Georgia Tech>Shaq Mason>#69>Jared Allen~0~Willie Roaf;Will Shields;Luke Kuechly~Brett Favre;Willie Roaf;Will Shields
+Demaryius Thomas>#88>Tony Gonzalez>T:KC>Jared Allen~Demaryius Thomas>C:Georgia Tech>Shaq Mason>#69>Jared Allen~0~Willie Roaf;Will Shields;Steve Hutchinson~Brett Favre;Willie Roaf;Will Shields
 Darrelle Revis>C:Pittsburgh>Larry Fitzgerald>T:ARI>Emmitt Smith~Darrelle Revis>#24>Ty Law>#22>Emmitt Smith~0~Larry Allen;Deion Sanders;Charles Haley~Larry Allen;Deion Sanders;Charles Haley
 Cordarrelle Patterson>T:LV>Jerry Rice>T:SF>Kyle Juszczyk~Cordarrelle Patterson>C:Tennessee>Dale Carter>#40>Kyle Juszczyk~0~Trent Williams;Steve Smith;George Kittle~Devin Hester;Trent Williams;Steve Smith
 Darrell Green>T:WAS>Champ Bailey>T:NO>Andy Dalton~Darrell Green>#28>Mark Ingram>#14>Andy Dalton~0~Zack Martin;A.J. Green;Khalil Mack~Zack Martin;A.J. Green;Khalil Mack
@@ -674,7 +674,7 @@ Jarvis Landry>#80>Jerry Rice>T:SEA>Greg Olsen~Jarvis Landry>#80>Andre Johnson>C:
 CeeDee Lamb>T:DAL>Deion Sanders>T:BAL>Ed Reed~CeeDee Lamb>#88>Michael Irvin>C:Miami>Ed Reed~0~Ray Lewis;Jonathan Ogden;Andre Johnson~Ray Lewis;Jonathan Ogden;Andre Johnson
 LeRoy Butler>C:Florida State>Randy Moss>T:TEN>Derrick Henry~LeRoy Butler>C:Florida State>Samari Rolle>#22>Derrick Henry~0~Andre Johnson;Adrian Peterson;Julio Jones~Andre Johnson;Adrian Peterson;Julio Jones
 Chris Johnson>#21>Deion Sanders>T:WAS>Bruce Smith~Chris Johnson>#23>Kyle Fuller (DB 2014)>C:Virginia Tech>Bruce Smith~0~Champ Bailey;Thurman Thomas;Andre Reed~Champ Bailey;Thurman Thomas;Andre Reed
-Antonio Brown>T:LV>Eric Dickerson>T:LAR>Aaron Donald~Antonio Brown>C:Central Michigan>J.J. Watt>#99>Aaron Donald~0~Bobby Wagner;Matthew Stafford;Von Miller~Bobby Wagner;Matthew Stafford;Von Miller
+Antonio Brown>T:LV>Eric Dickerson>T:LAR>Aaron Donald~Antonio Brown>C:Central Michigan>J.J. Watt>#99>Aaron Donald~0~Bobby Wagner;Matthew Stafford;Von Miller~Bobby Wagner;Matthew Stafford;Jalen Ramsey
 Larry Fitzgerald>T:ARI>Alan Faneca>T:PIT>Jerome Bettis~Larry Fitzgerald>#11>Steve Beuerlein>C:Notre Dame>Jerome Bettis~0~Rod Woodson;Dermontti Dawson;Troy Polamalu~Rod Woodson;Alan Faneca;Dermontti Dawson
 Donovan McNabb>T:MIN>Brett Favre>T:GB>Matt Hasselbeck~Donovan McNabb>#5>Morten Andersen>#8>Matt Hasselbeck~1~Jerry Rice;Andre Johnson;Walter Jones~Jerry Rice;Brett Favre;Andre Johnson
 Patrick Peterson>T:PIT>Antonio Brown>#17>Josh Allen~Patrick Peterson>#7>Case Keenum>#17>Josh Allen~0~LeSean McCoy;Von Miller;Amari Cooper~LeSean McCoy;Stefon Diggs;Von Miller
@@ -758,7 +758,7 @@ Dallas Clark>T:BAL>Rod Woodson>T:LV>Marshawn Lynch~Dallas Clark>#44>Joique Bell>
 Tom Brady>T:TB>Anthony Munoz>T:CIN>Ja'Marr Chase~Tom Brady>#12>Allen Robinson>#1>Ja'Marr Chase~0~Joe Flacco;Joe Burrow;Joe Mixon~Joe Flacco;Joe Burrow;Joe Mixon
 Derrick Mason>T:TEN>Bruce Matthews>C:USC>Junior Seau~Derrick Mason>#82>Billy Miller>C:USC>Junior Seau~0~Drew Brees;Tom Brady;Zach Thomas~Drew Brees;Tom Brady;Randy Moss
 Eddie George>T:TEN>Randy Moss>#84>Cordarrelle Patterson~Eddie George>#27>Arian Foster>C:Tennessee>Cordarrelle Patterson~0~Tom Brady;Jared Allen;Russell Wilson~Tom Brady;Jared Allen;Adrian Peterson
-Darrell Green>T:WAS>Deion Sanders>T:SF>Bryant Young~Darrell Green>#28>Dorsey Levens>C:Notre Dame>Bryant Young~0~Jerry Rice;Terrell Owens;Larry Allen~Jerry Rice;Terrell Owens;Larry Allen
+Darrell Green>T:WAS>Deion Sanders>T:SF>Bryant Young~Darrell Green>#28>Dorsey Levens>C:Notre Dame>Bryant Young~0~Jerry Rice;Terrell Owens;Rod Woodson~Jerry Rice;Terrell Owens;Rod Woodson
 Aaron Rodgers>T:PIT>Rod Woodson>T:LV>Amari Cooper~Aaron Rodgers>#8>Kirk Cousins>#18>Amari Cooper~0~Jason Witten;Zack Martin;Myles Garrett~Charles Woodson;Jason Witten;Zack Martin
 Darren Sproles>T:PHI>Terrell Owens>T:DAL>Troy Aikman~Darren Sproles>#43>Eric Kendricks>C:UCLA>Troy Aikman~1~Larry Allen;Deion Sanders;Emmitt Smith~Larry Allen;Deion Sanders;Emmitt Smith
 Drew Brees>T:LAC>Dwight Freeney>T:SEA>Cortez Kennedy~Drew Brees>#9>Brevin Jordan>C:Miami>Cortez Kennedy~0~Walter Jones;Kevin Mawae;Shaun Alexander~Walter Jones;Kevin Mawae;Shaun Alexander
@@ -872,7 +872,7 @@ Michael Thomas>#13>Dan Marino>T:MIA>Mike Wallace~Michael Thomas>#13>Kerry Collin
 Warren Sapp>T:LV>Randy Moss>T:TEN>Chris Johnson~Warren Sapp>C:Miami>Devin Hester>#23>Chris Johnson~0~Larry Fitzgerald;Steve Hutchinson;Kevin Mawae~Larry Fitzgerald;Randy Moss;Steve Hutchinson
 Troy Aikman>#8>Morten Andersen>T:NYG>Philip Rivers~Troy Aikman>C:Oklahoma>Baker Mayfield>#17>Philip Rivers~0~Drew Brees;LaDainian Tomlinson;Dwight Freeney~Drew Brees;LaDainian Tomlinson;Dwight Freeney
 Brian Dawkins>T:DEN>Jerry Rice>#80>Jarvis Landry~Brian Dawkins>#20>Patrick Peterson>C:LSU>Jarvis Landry~0~Myles Garrett;Alvin Kamara;Joel Bitonio~Myles Garrett;Alvin Kamara;Joel Bitonio
-Eli Manning>T:NYG>Morten Andersen>T:KC>Jamaal Charles~Eli Manning>#10>Vince Young>C:Texas>Jamaal Charles~0~Tony Gonzalez;Travis Kelce;Von Miller~Tony Gonzalez;Travis Kelce;Von Miller
+Eli Manning>T:NYG>Morten Andersen>T:KC>Jamaal Charles~Eli Manning>#10>Vince Young>C:Texas>Jamaal Charles~0~Tony Gonzalez;Travis Kelce;Jalen Ramsey~Tony Gonzalez;Travis Kelce;Jalen Ramsey
 Jared Goff>C:California>Tony Gonzalez>#88>Marvin Harrison~Jared Goff>C:California>Tony Gonzalez>#88>Marvin Harrison~0~Peyton Manning;Edgerrin James;Richard Dent~Peyton Manning;Marshall Faulk;Dwight Freeney
 Jarvis Landry>C:LSU>Alan Faneca>T:ARI>James Conner~Jarvis Landry>#80>Julio Jones>#6>James Conner~1~Antonio Brown;DeAndre Hopkins;Ben Roethlisberger~Antonio Brown;DeAndre Hopkins;Ben Roethlisberger
 Julio Jones>T:ATL>Tony Gonzalez>#88>Torry Holt~Julio Jones>#80>Andre Johnson>#81>Torry Holt~0~Marshall Faulk;Aeneas Williams;Orlando Pace~Marshall Faulk;Aeneas Williams;Orlando Pace
@@ -930,7 +930,7 @@ Dez Bryant>#88>Tony Gonzalez>T:KC>LeSean McCoy~Dez Bryant>#88>Antonio Bryant>C:P
 Mike Vick>T:PIT>Alan Faneca>T:ARI>Aeneas Williams~Mike Vick>C:Virginia Tech>Raheem Blackshear>#35>Aeneas Williams~0~Marshall Faulk;Orlando Pace;Isaac Bruce~Marshall Faulk;Orlando Pace;Isaac Bruce
 Doug Martin>T:TB>Tom Brady>T:NE>Reggie Wayne~Doug Martin>#22>Ed Reed>C:Miami>Reggie Wayne~1~Peyton Manning;Marvin Harrison;Dwight Freeney~Peyton Manning;Marvin Harrison;Dwight Freeney
 Chris Johnson>#23>Christian McCaffrey>T:CAR>Luke Kuechly~Chris Johnson>#28>AJ Dillon>C:Boston>Luke Kuechly~0~Julius Peppers;Jared Allen;Steve Smith~Julius Peppers;Jared Allen;Steve Smith
-Peyton Manning>T:DEN>Jerry Rice>T:SF>Bryant Young~Peyton Manning>#18>Michael Floyd>C:Notre Dame>Bryant Young~0~Terrell Owens;Larry Allen;Rod Woodson~Jerry Rice;Terrell Owens;Larry Allen
+Peyton Manning>T:DEN>Jerry Rice>T:SF>Bryant Young~Peyton Manning>#18>Michael Floyd>C:Notre Dame>Bryant Young~0~Terrell Owens;Rod Woodson;Larry Allen~Jerry Rice;Terrell Owens;Rod Woodson
 Kyle Juszczyk>T:SF>Jerry Rice>T:LV>Davante Adams~Kyle Juszczyk>#44>Derrick Ward>C:Fresno State>Davante Adams~0~Aaron Rodgers;Julius Peppers;Matthew Stafford~Aaron Rodgers;Julius Peppers;Matthew Stafford
 Rod Woodson>T:BAL>Ray Lewis>C:Miami>Michael Irvin~Rod Woodson>#26>Clinton Portis>C:Miami>Michael Irvin~0~Emmitt Smith;Troy Aikman;Jimmy Smith~Larry Allen;Deion Sanders;Emmitt Smith
 Ty Law>T:DEN>Jerry Rice>T:LV>Roger Craig~Ty Law>#26>Leon Washington>#33>Roger Craig~0~Randall McDaniel;Tim Brown;Chris Doleman~Jerry Rice;Randall McDaniel;Ronnie Lott
@@ -967,7 +967,7 @@ Khalil Mack>T:CHI>Devin Hester>#17>Josh Allen~Khalil Mack>C:Buffalo>K.J. Osborn>
 Ty Law>T:KC>Tony Gonzalez>T:ATL>Matt Schaub~Ty Law>#26>Adrian Peterson>#8>Matt Schaub~1~Andre Johnson;Dwight Freeney;Julio Jones~Andre Johnson;Dwight Freeney;Julio Jones
 Kevin Greene>T:SF>Jerry Rice>#80>Julio Jones~Kevin Greene>C:Auburn>Jason Campbell>#2>Julio Jones~0~Tony Gonzalez;Tom Brady;Dwight Freeney~Tony Gonzalez;Tom Brady;Dwight Freeney
 Carson Palmer>T:LV>Jerry Rice>#80>Jimmy Graham~Carson Palmer>C:USC>Johnnie Morton>#80>Jimmy Graham~0~Aaron Rodgers;Devin Hester;Bobby Wagner~Aaron Rodgers;Dwight Freeney;Devin Hester
-Von Miller>#24>Charles Woodson>T:GB>Aaron Rodgers~Von Miller>#24>Marshawn Lynch>C:California>Aaron Rodgers~0~Brett Favre;Julius Peppers;T.J. Watt~Brett Favre;Julius Peppers;Davante Adams
+Von Miller>#24>Charles Woodson>T:GB>Aaron Rodgers~Von Miller>#24>Marshawn Lynch>C:California>Aaron Rodgers~0~Brett Favre;Julius Peppers;Jahri Evans~Brett Favre;Julius Peppers;Davante Adams
 Derrick Henry>T:BAL>Deion Sanders>T:DAL>Andy Dalton~Derrick Henry>#22>Mark Ingram>#14>Andy Dalton~0~Zack Martin;A.J. Green;Khalil Mack~Zack Martin;A.J. Green;Khalil Mack
 Tiki Barber>#21>LaDainian Tomlinson>T:NYJ>Aaron Rodgers~Tiki Barber>#21>Adrian Peterson>#8>Aaron Rodgers~0~Brett Favre;Julius Peppers;Davante Adams~Brett Favre;Julius Peppers;Davante Adams
 Joe Mixon>T:CIN>Terrell Owens>T:DAL>Michael Irvin~Joe Mixon>C:Oklahoma>CeeDee Lamb>#88>Michael Irvin~1~Larry Allen;Deion Sanders;Emmitt Smith~Larry Allen;Deion Sanders;Emmitt Smith
@@ -33886,7 +33886,9 @@ function searchBest(A,B){let bv=-1,bp=null;const ca=conns(A),cb=conns(B),xs=[],y
 let bestFor=null,bestCh=null,bestV=0;
 function bestRoute(){if(bestFor==A+B+H)return bestCh;const pre=MX[A+'>'+B+'>'+H];[bestCh,bestV]=pre?[pre[0].split('>'),pre[1]]:searchBest(A,B);bestFor=A+B+H;return bestCh}
 const won=()=>C.length>1&&C.at(-1)==B,over=()=>won()||gave||(!U&&S>=3),links=()=>C.filter((_,i)=>i%2).length;
-function load(){const qi=U?Math.random()*Q.length|0:dayN%Q.length,e=Q[qi].split('~'),hr=(HR[qi]||'|').split('|');RU=H?hr[0].split(',').filter(Boolean):[];sol=(H&&hr[1]?hr[1]:e[0]).split('>');deep=e[2]=='1';TM=(e[3]||'').split(';').filter(Boolean);A=sol[0];B=sol.at(-1);C=[A];S=gave=tm=0;t0=Date.now();t1=0;msg='';
+// Hard mode gets its own daily pair: half a cycle away from the classic Daily, skipping any pair that shares a player with it
+function hardQi(){const L=Q.length,ends=i=>{const c=Q[i].split('~')[0].split('>');return[c[0],c.at(-1)]},[a,b]=ends(dayN%L);let i=(dayN+(L>>1))%L;while(ends(i).some(x=>x==a||x==b))i=(i+1)%L;return i}
+function load(){const qi=U?Math.random()*Q.length|0:H?hardQi():dayN%Q.length,e=Q[qi].split('~'),hr=(HR[qi]||'|').split('|');RU=H?hr[0].split(',').filter(Boolean):[];sol=(H&&hr[1]?hr[1]:e[0]).split('>');deep=e[2]=='1';TM=(e[3]||'').split(';').filter(Boolean);A=sol[0];B=sol.at(-1);C=[A];S=gave=tm=0;t0=Date.now();t1=0;msg='';
 clearInterval(cdT);ph='pre';if(!U){const sv=get(dkey(),null);if(sv&&sv.C&&sv.C[0]==A){({C,S,gave,t0,t1}=sv);tm=sv.tm||0;ph='play'}}draw()}
 // 8-second countdown; players appear at 5; clock starts at 0
 function countdown(n,step,done){cd=n;step();cdT=setInterval(()=>{if(--cd<=0){clearInterval(cdT);done()}else step()},1000)}
@@ -33988,9 +33990,11 @@ function sendOut(t,cb){if(navigator.share&&matchMedia?.('(pointer:coarse)').matc
 let RK=null;const rkKey=()=>day+(H?'h':'n'),did=()=>{let d=get('did','');if(!/^[a-z0-9]{8,32}$/.test(d)){d=Math.random().toString(36).slice(2,12)+Date.now().toString(36);put('did',d)}return d};
 function rankShow(){const e=$('#rank');if(!e||!RK||RK.k!=rkKey())return;e.hidden=false;
  if(RK.n<10){e.innerHTML=`<b>You're one of the first ${RK.n} player${RK.n==1?'':'s'} to finish today</b><span>Check back later to see how you stack up.</span>`;return}
- const s=RK.secs,lo=Math.min(s[0],Math.round(RK.you/1000)),hi=Math.max(lo+12,s[Math.floor(s.length*.95)]),nb=12,w=(hi-lo)/nb,bin=x=>Math.min(nb-1,Math.max(0,Math.floor((x-lo)/w))),h=Array(nb).fill(0);s.forEach(x=>h[bin(x)]++);
- const mx=Math.max(...h),me=bin(Math.round(RK.you/1000)),m=v=>clock(v*1000);
- e.innerHTML=`<b>${RK.pct>=100?'Fastest time today 🏆':`Faster than <em>${RK.pct}%</em> of players today`}</b><svg viewBox="0 0 240 60" preserveAspectRatio="none" role="img" aria-label="Today's finish times, your time highlighted">${h.map((v,i)=>`<rect x="${i*20+2}" y="${58-Math.max(2,v/mx*56)}" width="16" height="${Math.max(2,v/mx*56)}" rx="3" class="${i==me?'me':''}"/>`).join('')}</svg><div class="rx"><span>${m(lo)}</span><span>${RK.n} players today</span><span>${m(hi)}+</span></div>`}
+ const s=RK.secs,me=RK.you/1000,n=s.length,mean=s.reduce((a,b)=>a+b,0)/n,sd=Math.sqrt(s.reduce((a,b)=>a+(b-mean)**2,0)/n)||5,
+  bw=Math.max(2,1.06*sd*n**-.2),lo=Math.max(0,Math.min(s[0],me)-1.5*bw),hi=Math.max(lo+12,Math.max(s[Math.floor(n*.99)],me)+1.5*bw),N=60,X=k=>lo+(hi-lo)*k/N,ys=Array.from({length:N+1},(_,k)=>s.reduce((a,v)=>a+Math.exp(-(((X(k)-v)/bw)**2)/2),0)),ym=Math.max(...ys),
+  px=x=>Math.max(0,Math.min(240,(x-lo)/(hi-lo)*240)),py=y=>58-y/ym*52,line=ys.map((y,k)=>`${k?'L':'M'}${(k*240/N).toFixed(1)},${py(y).toFixed(1)}`).join(''),
+  mx=px(me),my=py(s.reduce((a,v)=>a+Math.exp(-(((me-v)/bw)**2)/2),0)),m=v=>clock(v*1000);
+ e.innerHTML=`<b>${RK.pct>=100?'Fastest time today 🏆':`Faster than <em>${RK.pct}%</em> of players today`}</b><svg viewBox="0 0 240 62" role="img" aria-label="Spread of today's finish times, with your time marked"><defs><clipPath id="rkL"><rect x="${mx}" y="0" width="${240-mx}" height="62"/></clipPath></defs><path class="area" d="${line}L240,58L0,58Z"/><path class="area me" clip-path="url(#rkL)" d="${line}L240,58L0,58Z"/><path class="crv" d="${line}"/><line x1="${mx}" x2="${mx}" y1="${my}" y2="58" class="mk"/><circle cx="${mx}" cy="${my}" r="3.5" class="dot"/></svg><div class="rx"><span>← faster</span><span>slower →</span></div><span>${RK.n} players today · green = players you beat</span>`}
 function rankLoad(){if(U||!won()||typeof fetch!='function'||globalThis.location?.protocol!='https:'&&globalThis.location?.protocol!='http:')return;const k=rkKey();if(RK&&RK.k==k&&Date.now()-RK.at<6e4)return rankShow();
  fetch('/api/rank',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({day,hard:H?1:0,ms:t1-t0+pen(),id:did()})}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.n){RK={...j,k,at:Date.now()};rankShow()}}).catch(()=>{})}
 function share(){track('share/lateral');const t=`Lateral ${U?'Unlimited':'#'+pnum()}${H?' · Hard':''} 🏈\n${U?A+' → '+B+'\n':''}`+(won()?`⏱ ${clock(t1-t0+pen())} · ${links()} lateral${links()==1?'':'s'}${S?' · '+'❌'.repeat(S):''}${tm?' · 💡':''}\n${C.map((k,i)=>i%2?SQ[htier(C,i)[0]]:'').join('')}${RK&&RK.k==rkKey()&&RK.n>=10?(RK.pct>=100?'\n🏆 Fastest time today':`\n🏆 Faster than ${RK.pct}% of players`):''}`:`❌ Turnover on downs`)+`\n${SITE}`;
