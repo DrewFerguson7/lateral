@@ -154,6 +154,7 @@ h1 a{color:inherit;text-decoration:none;cursor:pointer}h1 a:focus-visible{outlin
 }
 
 @font-face{font-family:Graduate;src:url(fonts/graduate.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Oswald;src:url(fonts/oswald.woff2) format('woff2');font-weight:600;font-display:swap}
 @font-face{font-family:Chalk;src:url(fonts/marker.woff2) format('woff2');font-display:swap}
 :root{--jersey:Graduate,"Big Shoulders Display",Impact,serif;--chalk:Chalk,"Comic Sans MS",cursive;--twill:#c6f24e;--navy:#10223a;--turf:#1d5a35;--turf2:#226a3e}
 h1 .wm{position:relative;isolation:isolate;font-family:var(--jersey);font-weight:400;text-transform:uppercase;letter-spacing:.04em;color:var(--twill);display:inline-block;transform:rotate(-3deg);padding:0 .12em}
@@ -163,6 +164,7 @@ h1 .wm{position:relative;isolation:isolate;font-family:var(--jersey);font-weight
 .wm span{color:inherit}
 h1{font-size:clamp(34px,10vw,60px)}
 body:not(.ingame) h1{font-size:clamp(46px,13vw,92px)}
+.pitch{display:grid;gap:6px}.hook{margin:0;font:600 clamp(30px,8.4vw,44px)/1.02 Oswald,'Arial Narrow',sans-serif;letter-spacing:.2px;color:var(--ink);text-wrap:balance}.how{margin:0;font-size:17px;line-height:1.45;color:var(--mu);max-width:32em}
 .field{margin:0;border-radius:18px;overflow:hidden;background:repeating-linear-gradient(90deg,var(--turf) 0 60px,var(--turf2) 60px 120px);box-shadow:inset 0 0 0 4px #ffffff22;position:relative}
 .field svg{display:block;width:100%;height:auto}
 .field .yd line{stroke:#ffffff55;stroke-width:3}.field .yd line.h{stroke:#ffffff26;stroke-width:2;stroke-dasharray:6 14}
@@ -531,7 +533,7 @@ function homeHTML(){const ex=[['The quick way',['Tom Brady','T:TB','Ronde Barber
  ['The stylish way',['Tom Brady','T:NE','James Harrison','T:BAL','Ed Reed'],'James Harrison finished his career with the Patriots in 2017, and he was briefly a Raven back in 2004. Harder to think of, so it earns Solid and Obscure.']];
  A='Tom Brady';B='Ed Reed';H=0;RU=[];
  const card=([t,ch,txt])=>`<div class="ex"><h3><span>${t}</span></h3><div class="exr">${route(ch)}</div><p>${txt}</p><div class="score">${ch.map((k,i)=>i%2?(([tt,why])=>`<div><span>${tbadge(tt)} ${lab(k)} → ${ch[i+1]}</span></div>`)(htier(ch,i)):'').join('')}</div></div>`;
- return`<div class="hl"><p class="lede">Connect two NFL players through the teams, jersey numbers and colleges they share. Every link is a lateral. Fastest time wins.</p>
+ return`<div class="hl"><div class="pitch"><p class="hook">Link any two NFL players.</p><p class="how">Go through the teams, jersey numbers and colleges they share. Fastest time wins.</p></div>
 <figure class="field" aria-label="Example: Tom Brady to Ed Reed through the Buccaneers and jersey number 20"><svg viewBox="0 0 600 250" aria-hidden="true">
 <g class="yd">${[60,180,300,420,540].map(x=>`<line x1="${x}" y1="0" x2="${x}" y2="250"/>`).join('')}${[120,240,360,480].map(x=>`<line class="h" x1="${x}" y1="0" x2="${x}" y2="250"/>`).join('')}</g>
 <g class="num"><text x="60" y="236">10</text><text x="180" y="236">20</text><text x="300" y="236">30</text><text x="420" y="236">20</text><text x="540" y="236">10</text></g>
@@ -549,7 +551,7 @@ ${ex.map(card).join('')}</div></details>
 <details class="acc"><summary>How you're ranked</summary><div class="accb"><p>The clock starts when the countdown ends and stops at the touchdown. Wrong guesses don't add time, but Daily gives you only 3 timeouts. The teammates hint adds 30 seconds.</p><p>Each lateral also earns a style badge for how deep a cut it was. In shared results, each square is one lateral: 🟩 Gimme · 🟦 Solid · 🟨 Niche · 🟧 Obscure · 🟥 Legendary. ❌ marks a timeout used.</p></div></details></div>
 <p class="foot">Fan-made. Not affiliated with the NFL. Data: nflverse, College Football Data. · <button class="tbtn" id="repHome">Report a mistake</button></p>`}
 const homeHtml=homeHTML();
-function home(on){$('#home').hidden=!on;$('#app').hidden=on;document.body?.classList?.toggle('ingame',!on);$('#topcta').hidden=!on;if(on){$('#home').innerHTML=homeHtml;$('#date').textContent='The NFL connection game';fitN();on2('goPlay',()=>{home(0);tab(0)});on2('goPlay2',()=>{home(0);tab(0)});on2('goTrivia',()=>{home(0);tab(1)});on2('goBK',()=>{home(0);tab(2)});on2('repHome',()=>openReport(''));const d=$('#home details');if(d&&globalThis.innerWidth>=1000)d.open=true}else draw()}
+function home(on){$('#home').hidden=!on;$('#app').hidden=on;document.body?.classList?.toggle('ingame',!on);$('#topcta').hidden=!on;if(on){$('#home').innerHTML=homeHtml;$('#date').textContent='';fitN();on2('goPlay',()=>{home(0);tab(0)});on2('goPlay2',()=>{home(0);tab(0)});on2('goTrivia',()=>{home(0);tab(1)});on2('goBK',()=>{home(0);tab(2)});on2('repHome',()=>openReport(''));const d=$('#home details');if(d&&globalThis.innerWidth>=1000)d.open=true}else draw()}
 $('#logo').onclick=e=>{e.preventDefault();home(1)};
 function askFor(k){return k[0]=='#'?`Name anyone who wore <b>${k}</b>`:k[0]=='T'?`Name anyone who played for the <b>${lab(k)}</b>`:`Name anyone who went to <b>${lab(k)}</b>`}
 function fitN(){(document.querySelectorAll?.('.vs b')||[]).forEach(b=>{b.style.fontSize='';let f=parseFloat(getComputedStyle(b).fontSize);while(f>14&&b.scrollWidth>b.clientWidth+1)b.style.fontSize=(f-=1)+'px'})}
