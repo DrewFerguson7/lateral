@@ -152,6 +152,33 @@ h1 a{color:inherit;text-decoration:none;cursor:pointer}h1 a:focus-visible{outlin
  #gH>.chain::before,#gB>.chain::before{content:"Your drive";margin:0 0 10px -6px;font:700 12px var(--cond);letter-spacing:1.6px;text-transform:uppercase;color:var(--mu)}#gB>.chain::before{content:"Your chain"}
  .chain .p{font-size:17px}
 }
+
+@font-face{font-family:Graduate;src:url(fonts/graduate.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Chalk;src:url(fonts/marker.woff2) format('woff2');font-display:swap}
+:root{--jersey:Graduate,"Big Shoulders Display",Impact,serif;--chalk:Chalk,"Comic Sans MS",cursive;--twill:#c6f24e;--navy:#10223a;--turf:#1d5a35;--turf2:#226a3e}
+h1 .wm{position:relative;isolation:isolate;font-family:var(--jersey);font-weight:400;text-transform:uppercase;letter-spacing:.04em;color:var(--twill);display:inline-block;transform:rotate(-3deg);padding:0 .12em}
+.wm::before,.wm::after{content:attr(data-t);position:absolute;inset:0 .12em;z-index:-1}
+.wm::after{color:#fff;-webkit-text-stroke:.09em #fff}
+.wm::before{z-index:-2;color:var(--navy);-webkit-text-stroke:.22em var(--navy);text-shadow:.05em .07em 0 var(--navy)}
+.wm span{color:inherit}
+h1{font-size:clamp(34px,10vw,60px)}
+body:not(.ingame) h1{font-size:clamp(46px,13vw,92px)}
+.field{margin:0;border-radius:18px;overflow:hidden;background:repeating-linear-gradient(90deg,var(--turf) 0 60px,var(--turf2) 60px 120px);box-shadow:inset 0 0 0 4px #ffffff22;position:relative}
+.field svg{display:block;width:100%;height:auto}
+.field .yd line{stroke:#ffffff55;stroke-width:3}.field .yd line.h{stroke:#ffffff26;stroke-width:2;stroke-dasharray:6 14}
+.field .num text{font:400 26px var(--jersey);fill:#ffffff40}
+.field .route{fill:none;stroke:#f4f6ef;stroke-width:4;stroke-dasharray:3 11;stroke-linecap:round}
+.field .ahd{fill:#f4f6ef}
+.field .plr circle{fill:none;stroke:#f4f6ef;stroke-width:4}.field .plr .tgt{fill:var(--twill);stroke:var(--navy)}
+.field .chalk text{font:400 27px var(--chalk);fill:#f4f6ef}
+.field .tag text{font:400 30px var(--chalk);fill:var(--twill)}
+.field figcaption{font:400 16px/1.35 var(--chalk);color:#e8f1e2;padding:0 18px 14px;margin-top:-6px}
+.bigplay{font-family:var(--jersey)!important;font-weight:400!important;letter-spacing:.06em!important;font-size:clamp(26px,7vw,40px)!important}
+.mc{grid-template-columns:auto 1fr;column-gap:12px;align-items:center}.mc .ico{grid-row:1/span 2;width:44px;height:44px;border-radius:10px;background:var(--turf);padding:4px;fill:none;stroke:#f4f6ef;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.mc .ico .dash{stroke-dasharray:2 6}.mc .ico text{font:400 16px var(--chalk);fill:var(--twill);stroke:none}
+.mc b{font:400 18px/1.05 var(--jersey)!important;letter-spacing:.03em}.mc b::after{content:none!important}
+.acc summary{font-family:var(--jersey)!important;font-weight:400!important;letter-spacing:.03em;font-size:20px!important}
+@media(min-width:1000px){.mc{grid-template-columns:1fr;row-gap:8px}.mc .ico{grid-row:auto}}
 #tv2+.acbox{left:auto}
 .rank{display:grid;gap:6px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg)}.rank b{font:800 20px/1.15 var(--disp);text-transform:uppercase;letter-spacing:.3px}.rank b em{font-style:normal;color:var(--acc-text)}
 .rank>span,.rx{font-size:13px;color:var(--mu)}.rank svg{width:100%;height:auto;display:block;overflow:visible}.rank .area{fill:var(--mu);opacity:.18}.rank .area.me{fill:var(--acc);opacity:.55}.rank .crv{fill:none;stroke:var(--mu);stroke-width:1.5;vector-effect:non-scaling-stroke}.rank .mk{stroke:var(--acc-text);stroke-width:2;vector-effect:non-scaling-stroke}.rank .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2;vector-effect:non-scaling-stroke}.rx{display:flex;justify-content:space-between;gap:8px;white-space:nowrap;margin-top:-2px}.home .vs b{white-space:nowrap}.home .vs{align-items:end}
@@ -164,7 +191,7 @@ h1 a{color:inherit;text-decoration:none;cursor:pointer}h1 a:focus-visible{outlin
 .tbtns .tbtn{border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;font-size:13px}.tbtns .tbtn:hover{border-color:var(--mu)}.tbtns{gap:8px}@media(max-width:560px){.tv{grid-template-columns:minmax(0,1fr)}}.aci b{white-space:normal!important;overflow:visible!important;text-overflow:clip!important}</style>
 <main>
 
-<header><div class="top"><h1><a id="logo" href="#home" aria-label="Lateral home"><svg class="mascot" viewBox="0 0 120 120" aria-hidden="true"><g stroke="#3b1f0f" stroke-linecap="round" stroke-linejoin="round"><path d="M48 92l-6 16M72 92l6 16" stroke-width="5" fill="none"/><path d="M33 110h14M73 110h14" stroke-width="7"/><path d="M28 66C18 72 14 80 13 88" stroke-width="5" fill="none"/><circle cx="13" cy="90" r="7.5" fill="#fff" stroke-width="3.5"/><g class="wave"><path d="M92 54C102 46 106 36 106 26" stroke-width="5" fill="none"/><circle cx="106" cy="21" r="7.5" fill="#fff" stroke-width="3.5"/></g><g transform="rotate(-14 60 64)"><path d="M14 64C26 30 94 30 106 64C94 98 26 98 14 64Z" fill="#9a5a32" stroke-width="4"/><path d="M27 44Q22 64 27 84M93 44Q98 64 93 84" stroke="#f3eadf" stroke-width="5" fill="none"/><path d="M46 41H74M52 36V46M60 36V46M68 36V46" stroke="#f3eadf" stroke-width="3.5"/><ellipse cx="49" cy="61" rx="8" ry="9.5" fill="#fff" stroke-width="3"/><ellipse cx="71" cy="61" rx="8" ry="9.5" fill="#fff" stroke-width="3"/><circle cx="51" cy="63" r="4" fill="#1d1d1d" stroke="none"/><circle cx="73" cy="63" r="4" fill="#1d1d1d" stroke="none"/><circle cx="52.5" cy="61.5" r="1.4" fill="#fff" stroke="none"/><circle cx="74.5" cy="61.5" r="1.4" fill="#fff" stroke="none"/><path d="M49 76Q60 86 71 76" stroke-width="3.5" fill="#5a1d10"/></g></g></svg><span class="wm">Lat<span>eral</span></span></a></h1><div class="topcta" id="topcta"></div></div><p class="sub" id="date"></p></header>
+<header><div class="top"><h1><a id="logo" href="#home" aria-label="Lateral home"><svg class="mascot" viewBox="0 0 120 120" aria-hidden="true"><g stroke="#3b1f0f" stroke-linecap="round" stroke-linejoin="round"><path d="M48 92l-6 16M72 92l6 16" stroke-width="5" fill="none"/><path d="M33 110h14M73 110h14" stroke-width="7"/><path d="M28 66C18 72 14 80 13 88" stroke-width="5" fill="none"/><circle cx="13" cy="90" r="7.5" fill="#fff" stroke-width="3.5"/><g class="wave"><path d="M92 54C102 46 106 36 106 26" stroke-width="5" fill="none"/><circle cx="106" cy="21" r="7.5" fill="#fff" stroke-width="3.5"/></g><g transform="rotate(-14 60 64)"><path d="M14 64C26 30 94 30 106 64C94 98 26 98 14 64Z" fill="#9a5a32" stroke-width="4"/><path d="M27 44Q22 64 27 84M93 44Q98 64 93 84" stroke="#f3eadf" stroke-width="5" fill="none"/><path d="M46 41H74M52 36V46M60 36V46M68 36V46" stroke="#f3eadf" stroke-width="3.5"/><ellipse cx="49" cy="61" rx="8" ry="9.5" fill="#fff" stroke-width="3"/><ellipse cx="71" cy="61" rx="8" ry="9.5" fill="#fff" stroke-width="3"/><circle cx="51" cy="63" r="4" fill="#1d1d1d" stroke="none"/><circle cx="73" cy="63" r="4" fill="#1d1d1d" stroke="none"/><circle cx="52.5" cy="61.5" r="1.4" fill="#fff" stroke="none"/><circle cx="74.5" cy="61.5" r="1.4" fill="#fff" stroke="none"/><path d="M49 76Q60 86 71 76" stroke-width="3.5" fill="#5a1d10"/></g></g></svg><span class="wm" data-t="Lateral">Lateral</span></a></h1><div class="topcta" id="topcta"></div></div><p class="sub" id="date"></p></header>
 <section class="home" id="home"></section>
 <div id="app" hidden>
 <div class="tabs" role="tablist"><button role="tab" id="tH">Lateral</button><button role="tab" id="tT">Trivia</button><button role="tab" id="tB">Ball Knowledge</button></div>
@@ -505,9 +532,17 @@ function homeHTML(){const ex=[['The quick way',['Tom Brady','T:TB','Ronde Barber
  A='Tom Brady';B='Ed Reed';H=0;RU=[];
  const card=([t,ch,txt])=>`<div class="ex"><h3><span>${t}</span></h3><div class="exr">${route(ch)}</div><p>${txt}</p><div class="score">${ch.map((k,i)=>i%2?(([tt,why])=>`<div><span>${tbadge(tt)} ${lab(k)} → ${ch[i+1]}</span></div>`)(htier(ch,i)):'').join('')}</div></div>`;
  return`<div class="hl"><p class="lede">Connect two NFL players through the teams, jersey numbers and colleges they share. Every link is a lateral. Fastest time wins.</p>
-<div class="board"><small class="bl">Example</small><div class="vs"><div><small>Start</small><b>Tom Brady</b></div><i>→</i><div><small>Target</small><b>Ed Reed</b></div></div></div>
-<button class="hike bigplay" id="goPlay">Play</button>
-<div class="modecards"><button class="mc" id="goPlay2"><b>Lateral</b><span>Daily puzzle: link two players</span></button><button class="mc" id="goTrivia"><b>Trivia</b><span>Name his number, team and college</span></button><button class="mc" id="goBK"><b>Ball Knowledge</b><span>Endless chain on a 30-second clock</span></button></div></div>
+<figure class="field" aria-label="Example: Tom Brady to Ed Reed through the Buccaneers and jersey number 20"><svg viewBox="0 0 600 250" aria-hidden="true">
+<g class="yd">${[60,180,300,420,540].map(x=>`<line x1="${x}" y1="0" x2="${x}" y2="250"/>`).join('')}${[120,240,360,480].map(x=>`<line class="h" x1="${x}" y1="0" x2="${x}" y2="250"/>`).join('')}</g>
+<g class="num"><text x="60" y="236">10</text><text x="180" y="236">20</text><text x="300" y="236">30</text><text x="420" y="236">20</text><text x="540" y="236">10</text></g>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="ahd"/></marker></defs>
+<path class="route" d="M100 158C136 70 220 64 292 118S452 52 512 128" marker-end="url(#ah)"/>
+<g class="plr"><circle cx="92" cy="166" r="14"/><circle cx="300" cy="126" r="14"/><circle cx="526" cy="142" r="14" class="tgt"/></g>
+<g class="chalk"><text x="100" y="206" text-anchor="middle">Tom Brady</text><text x="300" y="166" text-anchor="middle">Ronde Barber</text><text x="530" y="182" text-anchor="middle">Ed Reed</text></g>
+<g class="tag"><text x="176" y="58" text-anchor="middle">Bucs</text><text x="414" y="60" text-anchor="middle">#20</text></g>
+</svg></figure>
+<button class="hike bigplay" id="goPlay">Play today\'s game</button>
+<div class="modecards"><button class="mc" id="goPlay2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="11" cy="34" r="6"/><circle cx="37" cy="14" r="6"/><path class="dash" d="M15 29C20 16 28 26 32 18"/></svg><b>Lateral</b><span>Daily puzzle: link two players</span></button><button class="mc" id="goTrivia"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M16 8l-9 6 4 8 4-2v20h18V20l4 2 4-8-9-6c-1 4-4 6-8 6s-7-2-8-6z"/><text x="24" y="36" text-anchor="middle">?</text></svg><b>Trivia</b><span>Name his number, team and college</span></button><button class="mc" id="goBK"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="27" r="15"/><path d="M24 27V18M20 6h8M24 6v6"/></svg><b>Ball Knowledge</b><span>Endless chain on a 30-second clock</span></button></div></div>
 <div class="hr"><details class="acc"><summary>How a drive works</summary><div class="accb">
 <ol class="steps"><li><span>Name a <b>team</b>, a <b>jersey number</b> or a <b>college</b> the player had. Brady: the Buccaneers, #12, or Michigan.</span></li><li><span>Name <b>any other player</b> who shares it. Any Buccaneer ever, anyone who wore #12, anyone from Michigan.</span></li><li><span>Keep going until you reach the target. Each team, number and college can be used once.</span></li></ol>
 ${ex.map(card).join('')}</div></details>
