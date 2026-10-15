@@ -18,7 +18,7 @@ Connect two NFL players through the teams, jersey numbers and colleges they shar
 ## Repo layout
 - `site/`: what's published (the game page, preview image, icon)
 - `netlify/functions/rank.mjs`: the daily-rankings function
-- `src/`: build tools and data. `tpl2.html` is the game template; `build2.py` fills in the player data; `standalone.py` writes `site/index.html`; `val.js` checks every puzzle route. Changes here don't trigger a deploy.
+- `src/`: build tools and data. `update_season.py 2026` adds a new season's rosters (trades, signings, rookies). `tpl2.html` is the game template; `build2.py` fills in the player data; `standalone.py` writes `site/index.html`; `val.js` checks every puzzle route. Changes here don't trigger a deploy.
 
 ```
 cd src && PYTHONHASHSEED=0 python3 build2.py && python3 standalone.py && node val.js

@@ -3,3 +3,5 @@ node_modules/
 .DS_Store
 src/out/
 __pycache__/
+src/*.pre*
+src/*.bak
