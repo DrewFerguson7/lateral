@@ -172,7 +172,7 @@ h1 a{color:inherit;text-decoration:none;cursor:pointer}h1 a:focus-visible{outlin
 @font-face{font-family:Graduate;src:url(fonts/graduate.woff2) format('woff2');font-display:swap}
 @font-face{font-family:Oswald;src:url(fonts/oswald.woff2) format('woff2');font-weight:600;font-display:swap}
 @font-face{font-family:Chalk;src:url(fonts/marker.woff2) format('woff2');font-display:swap}
-:root{--jersey:Graduate,"Big Shoulders Display",Impact,serif;--chalk:Chalk,"Comic Sans MS",cursive;--twill:#c6f24e;--navy:#10223a;--turf:#1d5a35;--turf2:#226a3e}
+:root{--jersey:Graduate,"Big Shoulders Display",Impact,serif;--chalk:Chalk,"Comic Sans MS",cursive;--twill:#c6f24e;--navy:#0b0c0e;--turf:#1d5a35;--turf2:#226a3e}
 h1 .wm{position:relative;isolation:isolate;font-family:var(--jersey);font-weight:400;text-transform:uppercase;letter-spacing:.04em;color:var(--twill);display:inline-block;transform:rotate(-3deg);padding:0 .12em}
 .wm::before,.wm::after{content:attr(data-t);position:absolute;inset:0 .12em;z-index:-1}
 .wm::after{color:#fff;-webkit-text-stroke:.09em #fff}
@@ -34134,8 +34134,7 @@ $('#tvD').onclick=()=>tvLoad(0);$('#tvU').onclick=()=>tvLoad(1);tvLoad(0);
 $('#tH').onclick=()=>tab(0);$('#tT').onclick=()=>tab(1);
 // ---------- Home ----------
 function route(ch){return ch.map((x,i)=>i%2?chip(x):`<span>${x}</span>`).join('<i>→</i>')}
-function homeHTML(){const ex=[['The quick way',['Tom Brady','T:TB','Ronde Barber','#20','Ed Reed'],'Brady and Ronde Barber both played for the Buccaneers, and Barber and Reed both wore #20. Fast, and two Gimmes for style.'],
- ['The stylish way',['Tom Brady','T:NE','James Harrison','T:BAL','Ed Reed'],'James Harrison finished his career with the Patriots in 2017, and he was briefly a Raven back in 2004. Harder to think of, so it earns Solid and Obscure.']];
+function homeHTML(){const ex=[['For example',['Tom Brady','T:TB','Ronde Barber','#20','Ed Reed'],'Brady and Ronde Barber both played for the Buccaneers, and Barber and Reed both wore #20. Fast, and two Gimmes for style.']];
  A='Tom Brady';B='Ed Reed';H=0;RU=[];
  const card=([t,ch,txt])=>`<div class="ex"><h3><span>${t}</span></h3><div class="exr">${route(ch)}</div><p>${txt}</p><div class="score">${ch.map((k,i)=>i%2?(([tt,why])=>`<div><span>${tbadge(tt)} ${lab(k)} → ${ch[i+1]}</span></div>`)(htier(ch,i)):'').join('')}</div></div>`;
  return`<div class="hl"><div class="pitch"><p class="hook">Connect two NFL players.</p><p class="how">Go through the teams, jersey numbers and colleges they share. Fastest time wins.</p></div>

@@ -17,5 +17,5 @@ g.Q.forEach((e,qi)=>{const p=e.split('~');route(p[0],`puzzle ${qi} classic`);n++
   else if(!g.P[m].t.some(t=>g.P[B].t.includes(t)))bad.push([`puzzle ${qi} hint`,`${m} never shared a team with ${B}`,m])}
  const h=(g.HR[qi]||'').split('|');if(h[1]){route(h[1],`puzzle ${qi} hard`,h[0].split(','));n++}});
 for(const[k,v]of Object.entries(g.MX))if(v&&v[0]){route(v[0],'best '+k);n++}
-route(['Tom Brady','T:TB','Ronde Barber','#20','Ed Reed'],'home quick');route(['Tom Brady','T:NE','James Harrison','T:BAL','Ed Reed'],'home stylish');
+route(['Tom Brady','T:TB','Ronde Barber','#20','Ed Reed'],'home quick');
 console.log('checked',n+2,'routes/hints | problems:',bad.length);for(const b of bad)console.log(JSON.stringify(b));
