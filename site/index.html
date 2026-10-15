@@ -34138,7 +34138,7 @@ function homeHTML(){const ex=[['The quick way',['Tom Brady','T:TB','Ronde Barber
  ['The stylish way',['Tom Brady','T:NE','James Harrison','T:BAL','Ed Reed'],'James Harrison finished his career with the Patriots in 2017, and he was briefly a Raven back in 2004. Harder to think of, so it earns Solid and Obscure.']];
  A='Tom Brady';B='Ed Reed';H=0;RU=[];
  const card=([t,ch,txt])=>`<div class="ex"><h3><span>${t}</span></h3><div class="exr">${route(ch)}</div><p>${txt}</p><div class="score">${ch.map((k,i)=>i%2?(([tt,why])=>`<div><span>${tbadge(tt)} ${lab(k)} → ${ch[i+1]}</span></div>`)(htier(ch,i)):'').join('')}</div></div>`;
- return`<div class="hl"><div class="pitch"><p class="hook">Link any two NFL players.</p><p class="how">Go through the teams, jersey numbers and colleges they share. Fastest time wins.</p></div>
+ return`<div class="hl"><div class="pitch"><p class="hook">Connect two NFL players.</p><p class="how">Go through the teams, jersey numbers and colleges they share. Fastest time wins.</p></div>
 <figure class="field" aria-label="Example: Tom Brady to Ed Reed through the Buccaneers and jersey number 20"><svg viewBox="0 0 600 250" aria-hidden="true">
 <g class="yd">${[60,180,300,420,540].map(x=>`<line x1="${x}" y1="0" x2="${x}" y2="250"/>`).join('')}${[120,240,360,480].map(x=>`<line class="h" x1="${x}" y1="0" x2="${x}" y2="250"/>`).join('')}</g>
 <g class="num"><text x="60" y="236">10</text><text x="180" y="236">20</text><text x="300" y="236">30</text><text x="420" y="236">20</text><text x="540" y="236">10</text></g>
