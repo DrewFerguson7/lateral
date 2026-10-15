@@ -2,7 +2,7 @@
 // node tools/devserver.mjs <site folder> <fake players> [port]
 import http from 'node:http'; import fs from 'node:fs'; import path from 'node:path';
 import { handle } from '../netlify/functions/rank.mjs';
-const [root = '.', seed = 0, port = 8770] = process.argv.slice(2), mem = new Map();
+const [root = 'site', seed = 0, port = 8770] = process.argv.slice(2), mem = new Map();
 const store = { list: async ({ prefix }) => ({ blobs: [...mem.keys()].filter(k => k.startsWith(prefix)).map(key => ({ key })) }), set: async (k, v) => mem.set(k, v) };
 const day = new Date().toLocaleDateString('en-CA');
 let r = 7; const rnd = () => (r = (r * 16807) % 2147483647) / 2147483647;

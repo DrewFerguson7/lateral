@@ -1,7 +1,10 @@
 [build]
-  publish = "."
+  publish = "site"
   functions = "netlify/functions"
   command = ""
+  # Only deploy when the live site or the ranking function changed (each deploy costs credits).
+  # Changes to src/ (build tools and data) or docs are saved without deploying.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- site netlify netlify.toml package.json package-lock.json"
 
 [[headers]]
   for = "/index.html"

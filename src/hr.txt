@@ -1,0 +1,410 @@
+old,nomain|Travis Kelce>#87>Mark Bruener>C:Washington>Budda Baker
+noteam,number|Terrell Davis>C:Georgia>Terry Hoage>#34>Thurman Thomas
+college,noteam|Brian Urlacher>#54>Darrin Smith>C:Miami>Jim Kelly
+defense,college|Aaron Donald>#99>Warren Sapp>C:Miami>Reggie Wayne
+mix,old|Terrell Davis>T:DEN>Jeff Robinson>#85>Derrick Mason
+old,number|Melvin Gordon>T:KC>John Carney>#3>Budda Baker
+long,college|Curtis Martin>T:NE>Adam Vinatieri>#4>Randy Bullock>C:Texas A&M>Von Miller
+noqb,college|Marshawn Lynch>T:SEA>Harold Jackson>C:Jackson State>Jimmy Smith
+nomain,college|Davante Adams>#17>Jeff Feagles>C:Miami>Cortez Kennedy
+defense,long|Jimmy Smith>T:JAX>Calais Campbell>#93>Dwight Freeney>T:ATL>Tony Gonzalez
+number,college|Mike Vick>C:Virginia Tech>John Engelberger>#95>Charles Haley
+defense,nomain|Muhsin Muhammad>T:CHI>Fred Williams>T:WAS>Jason Taylor
+nomain,college|Saquon Barkley>C:Penn State>Cameron Wake>T:MIA>Thurman Thomas
+college,nomain|Steve Smith>C:Utah>Matt Gay (K 2019)>#7>Ben Roethlisberger
+number,noteam|Terrell Owens>#81>Ricky Proehl>#88>Jeremy Shockey
+old,long|Richard Dent>T:CHI>George Blanda>C:Kentucky>John Grimsley>T:TEN>Eddie George
+old,college|LeRoy Butler>C:Florida State>Rohn Stark>T:PIT>Troy Polamalu
+long,defense|Baker Mayfield>T:CLE>Jim Marshall>#70>Mike Sinclair>T:SEA>Marshawn Lynch
+college,noqb|Amari Cooper>T:BUF>Jim Ritcher>C:N.C. State>Philip Rivers
+number,old|Jason Taylor>T:MIA>Cris Carter>#88>CeeDee Lamb
+defense,old|Tom Brady>T:NE>Junior Seau>C:USC>Amon-Ra St. Brown
+defense,mix|Drew Brees>T:NO>Derland Moore>C:Oklahoma>CeeDee Lamb
+mix,number|Bryant Young>#97>John Denney>T:MIA>Jason Taylor
+mix,noteam|Randall Cobb>C:Kentucky>Steve Johnson (WR 2008)>#13>Dan Marino
+defense,college|Donald Driver>T:GB>Eric Wilson (LB 2017)>C:Cincinnati>Travis Kelce
+noteam,old|Aaron Donald>#99>Dan Wilkinson>C:Ohio State>Ezekiel Elliott
+defense,number|Alvin Kamara>#41>Antoine Bethea>T:ARI>Budda Baker
+number,defense|Curtis Martin>#28>Bracy Walker>T:DET>Barry Sanders
+nomain,mix|Bobby Wagner>T:WAS>Graham Gano>#4>Dak Prescott
+old,college|Todd Heap>C:Arizona State>Jim Jeffcoat>T:DAL>DeMarcus Ware
+long,nomain|Cameron Jordan>C:California>Aaron Rodgers>#8>Morten Andersen>T:ATL>Brett Favre
+noteam,college|Tom Brady>C:Michigan>Desmond Howard>#18>A.J. Green
+long,college|Jimmy Smith>T:JAX>John Carney>#1>Mike Nugent>C:Ohio State>Michael Thomas
+long,noteam|Steve Smith>#89>Marcedes Lewis>#84>Kendrick Bourne>#10>Eli Manning
+college,long|Champ Bailey>T:NO>Morten Andersen>#5>Alex McGough>C:Florida International>T.Y. Hilton
+college,noqb|Dan Marino>C:Pittsburgh>Andy Lee>T:ARI>Kyler Murray
+defense,long|Michael Irvin>C:Miami>Calais Campbell>#93>Dwight Freeney>T:LAC>LaDainian Tomlinson
+number,defense|Chad Ochocinco>T:NE>Jason McCourty>#30>Ahman Green
+college,old|Jared Allen>T:MIN>Adam Schreiber>C:Texas>Earl Thomas
+old,long|Jared Allen>T:CHI>George Blanda>C:Kentucky>Marc Logan>T:CIN>Geno Atkins
+noteam,number|Edgerrin James>#32>Marcus Allen>C:USC>Junior Seau
+mix,college|Deshaun Watson>T:HOU>Donnie Jones>C:LSU>Ja'Marr Chase
+defense,long|Rob Gronkowski>T:NE>Junior Seau>#55>John Abraham>T:ATL>Roddy White
+nomain,college|Christian McCaffrey>T:SF>Phil Dawson>C:Texas>Earl Thomas
+mix,nomain|Jason Witten>#82>Joey Galloway>T:WAS>Shaun Alexander
+college,number|Brandon Marshall>C:UCF>Shaquill Griffin>#20>Ronde Barber
+old,long|Hines Ward>T:PIT>Gary Anderson (K 1982)>C:Syracuse>Olindo Mare>T:CAR>Cam Newton
+long,number|Randall Cobb>C:Kentucky>George Blanda>T:CHI>Josh McCown>#15>Patrick Mahomes
+defense,mix|Patrick Willis>#52>Jason Babin>T:PHI>Donovan McNabb
+college,defense|Troy Polamalu>C:USC>Junior Seau>T:NE>Rich Gannon
+college,noqb|Ed Reed>T:NYJ>Ronnie Lott>C:USC>Amon-Ra St. Brown
+noteam,old|Ed Reed>#22>Emmitt Smith>C:Florida>Zach Piller>#69>Jared Allen
+defense,mix|Patrick Mahomes>#15>George Wilson (SS 2005)>T:BUF>Anquan Boldin
+old,mix|Donovan McNabb>#5>Jim Harbaugh>T:BAL>Ray Rice
+mix,number|Demaryius Thomas>#18>Wade Wilson>T:MIN>Jared Allen
+number,defense|Darrelle Revis>#24>Johnathan Joseph>#22>Emmitt Smith
+college,noqb|Cordarrelle Patterson>C:Tennessee>Morgan Cox>T:BAL>Kyle Juszczyk
+mix,long|Darrell Green>T:WAS>Ray Brown (G 1986)>#61>Marcus Cannon>C:TCU>Andy Dalton
+long,college|Steve Smith>T:CAR>John Kasay>#2>Mason Rudolph (QB 2024)>C:Oklahoma State>Barry Sanders
+long,nomain|Jarvis Landry>#5>Morten Andersen>#7>Jon Kitna>T:SEA>Greg Olsen
+college,long|CeeDee Lamb>T:DAL>Vinny Testaverde>#12>Jim Kelly>C:Miami>Ed Reed
+noteam,noqb|LeRoy Butler>C:Florida State>Terrell Buckley>#22>Derrick Henry
+noqb,old|Chris Johnson>T:TEN>Gary Anderson (K 1982)>T:BUF>Bruce Smith
+defense,college|Antonio Brown>C:Central Michigan>Cullen Jenkins>#99>Aaron Donald
+long,nomain|Larry Fitzgerald>C:Pittsburgh>Andy Lee>#2>Mason Crosby>T:LAR>Jerome Bettis
+nomain,noqb|Donovan McNabb>#5>Morten Andersen>#8>Matt Hasselbeck
+mix,noqb|Patrick Peterson>T:ARI>Jeff Feagles>#17>Josh Allen
+old,college|Alex Smith>T:SF>Phil Dawson>C:Texas>Earl Thomas
+long,number|Khalil Mack>T:CHI>George Blanda>C:Kentucky>Moe Williams>#23>Christian McCaffrey
+old,defense|Matthew Stafford>C:Georgia>Champ Bailey>T:DEN>Jamaal Charles
+long,nomain|Marshawn Lynch>T:LV>George Blanda>C:Kentucky>Randall Cobb>T:NYJ>Le'Veon Bell
+number,long|Greg Jennings>T:MIN>Morten Andersen>#5>Graham Gano>T:CAR>Luke Kuechly
+college,noteam|Dwight Freeney>#99>Chris Hovan>C:Boston>Luke Kuechly
+nomain,college|Steve Smith>T:BAL>Kevin Zeitler>C:Wisconsin>T.J. Watt
+defense,college|Antonio Brown>C:Central Michigan>Nick Bellore>T:SEA>Jimmy Graham
+old,mix|Reggie Wayne>C:Miami>Vinny Testaverde>T:CLE>Myles Garrett
+number,noteam|Patrick Mahomes>#15>Brandon Stokley>#84>Cordarrelle Patterson
+college,mix|Drew Bledsoe>#11>Matt Hasselbeck>C:Boston>Luke Kuechly
+old,college|Patrick Mahomes>C:Texas Tech>Billy Joe Tolliver>T:ATL>Mike Vick
+long,old|LeSean McCoy>T:KC>Morten Andersen>#5>John Carney>T:LAC>Drew Brees
+college,mix|Alvin Kamara>C:Tennessee>Peyton Manning>T:DEN>Russell Wilson
+defense,college|Marvin Harrison>C:Syracuse>Dwight Freeney>#54>Zach Thomas
+mix,noteam|John Lynch>C:Stanford>Chris Draft>#96>Cortez Kennedy
+college,defense|Mike Evans>C:Texas A&M>Aaron Glenn>T:HOU>Mark Ingram
+long,defense|Darrelle Revis>T:NE>Junior Seau>#55>Darryl Talley>T:MIN>Roger Craig
+old,defense|Ed Reed>T:HOU>Jeff Zgonina>T:IND>T.Y. Hilton
+number,college|CeeDee Lamb>C:Oklahoma>Sterling Shepard>#87>Rob Gronkowski
+noqb,number|Brandon Marshall>T:NO>John Carney>#3>Budda Baker
+noqb,nomain|Dan Marino>C:Pittsburgh>Rickey Jackson>T:NO>Dez Bryant
+nomain,defense|A.J. Brown>T:TEN>Ron McDole>T:ARI>Emmitt Smith
+college,nomain|John Elway>T:IND>Matt Hasselbeck>C:Boston>Luke Kuechly
+defense,long|Shannon Sharpe>T:BAL>Calais Campbell>#93>Linval Joseph>T:PHI>Eric Allen
+mix,long|Von Miller>T:LAR>John Carney>#3>Nathan Peterman>C:Pittsburgh>Dan Marino
+mix,number|Eric Allen>T:NO>Morten Andersen>#8>Troy Aikman
+number,old|Dan Marino>T:MIA>Earl Morrall>#15>Patrick Mahomes
+nomain,college|Tony Romo>#9>Drew Stanton>C:Michigan State>Derrick Mason
+noqb,mix|Derrick Mason>C:Michigan State>Morten Andersen>T:NO>Michael Thomas
+college,noqb|Champ Bailey>T:DEN>Keith Brooking>C:Georgia Tech>Calvin Johnson
+number,nomain|Chris Jones>#95>Linval Joseph>T:DAL>Jimmy Smith
+college,defense|Jamaal Charles>T:JAX>Kelvin Pritchett>C:Mississippi>Patrick Willis
+college,nomain|Jared Goff>C:California>Aaron Rodgers>#8>Troy Aikman
+noteam,defense|Cooper Kupp>C:Eastern Washington>Albert Havili>#97>Cameron Heyward
+college,mix|Tyreek Hill>T:MIA>Irving Fryar>C:Nebraska>Ahman Green
+noteam,defense|Jared Goff>C:California>Ashtyn Davis>#32>Budda Baker
+college,noqb|Rob Gronkowski>T:NE>Matt Bahr>C:Penn State>Saquon Barkley
+mix,old|Mike Evans>#13>Joey Galloway>T:SEA>Bobby Wagner
+number,defense|Marshall Faulk>T:LAR>Von Miller>#24>Ty Law
+defense,college|Troy Aikman>T:DAL>Kelvin Pritchett>C:Mississippi>DK Metcalf
+college,noteam|Devin Hester>#23>Joe Haden>C:Florida>Emmitt Smith
+number,mix|Ronde Barber>#20>Eric Weddle>T:BAL>Earl Thomas
+college,mix|Ronde Barber>T:TB>Matt Bryant>C:Oregon State>Chad Ochocinco
+college,nomain|Fred Warner>#54>Marvin Jones (MLB 1993)>C:Florida State>LeRoy Butler
+college,long|LeSean McCoy>T:KC>Morten Andersen>#5>David Carr>C:Fresno State>Derek Carr
+number,noteam|Roquan Smith>C:Georgia>Terry Hoage>#34>Thurman Thomas
+college,mix|Saquon Barkley>T:PHI>Jimmie Giles>C:Alcorn State>Donald Driver
+nomain,college|Derrick Thomas>C:Alabama>Kareem Jackson>#22>Christian McCaffrey
+long,college|Bryant Young>T:SF>Gary Anderson (K 1982)>#1>Mike Badgley>C:Miami>Ray Lewis
+noteam,defense|Ezekiel Elliott>#21>Eric Rowe>C:Utah>Alex Smith
+long,number|Matthew Stafford>T:LAR>John Carney>#1>Dustin Colquitt>T:KC>Chris Jones
+college,defense|Roquan Smith>T:CHI>Jim Osborne>C:Southern>Aeneas Williams
+long,noteam|Tom Brady>#12>Aaron Rodgers>#8>Adrian Peterson>#21>Frank Gore
+number,long|Keenan Allen>T:CHI>George Blanda>C:Kentucky>Quinton Bohanna>#97>Cameron Heyward
+long,mix|Ronde Barber>T:TB>John Carney>#1>Robert Malone>C:Fresno State>Davante Adams
+college,long|Cam Newton>T:NE>Adam Vinatieri>C:South Dakota State>Bryan Witzmann>T:CHI>Brian Urlacher
+college,noteam|Matthew Stafford>C:Georgia>Champ Bailey>#24>Ty Law
+defense,long|Jonathan Taylor>#28>Darrell Green>C:Texas A&M University-Kingsville>Dwight Harrison>T:DEN>Ty Law
+old,long|Derrick Mason>T:TEN>George Blanda>C:Kentucky>Art Still>T:KC>Tyreek Hill
+long,college|Larry Fitzgerald>T:ARI>Jeff Feagles>#10>David Blough>C:Purdue>Rod Woodson
+number,noqb|Bobby Wagner>T:SEA>Jeff Feagles>#10>DeAndre Hopkins
+noteam,long|Eddie George>C:Ohio State>Jim Marshall>#70>Langston Walker>C:California>Cameron Jordan
+noteam,defense|Derek Carr>C:Fresno State>Omar Stoutmire>#23>Devin Hester
+noqb,nomain|LeRoy Butler>C:Florida State>Randy Moss>T:TEN>DeMarco Murray
+college,defense|Champ Bailey>C:Georgia>Thomas Davis>T:LAC>Khalil Mack
+nomain,number|Cortez Kennedy>C:Miami>Jeff Feagles>#18>Demaryius Thomas
+college,long|Andre Johnson>T:TEN>George Blanda>C:Kentucky>Jeff Van Note>T:ATL>Brett Favre
+college,long|Junior Seau>T:NE>Adam Vinatieri>C:South Dakota State>Todd Bouman>#4>Dak Prescott
+college,noteam|Alex Smith>#11>Matt Barkley>C:USC>Troy Polamalu
+old,long|Jared Goff>T:LAR>John Carney>#1>Randall Cunningham>T:BAL>Roquan Smith
+long,defense|Chad Ochocinco>T:NE>Junior Seau>#55>Terrell Suggs>T:BAL>Le'Veon Bell
+college,mix|Thurman Thomas>T:MIA>Earl Morrall>C:Michigan State>Kirk Cousins
+college,noteam|Peyton Manning>C:Tennessee>Jabari Greer>#33>Roger Craig
+noqb,number|Troy Polamalu>#43>Darren Sproles>T:NO>Champ Bailey
+old,college|J.J. Watt>T:ARI>Pete Kendall>C:Boston>Matt Ryan
+long,noqb|Dallas Clark>T:IND>Adam Vinatieri>#4>John Kasay>T:SEA>Marshawn Lynch
+mix,number|Tom Brady>T:TB>John Carney>#1>Ja'Marr Chase
+number,noteam|Derrick Mason>#82>Billy Miller>C:USC>Junior Seau
+number,old|Eddie George>C:Ohio State>Joey Galloway>#84>Cordarrelle Patterson
+long,nomain|Darrell Green>#28>Adrian Peterson>#8>Kyle Rudolph>C:Notre Dame>Bryant Young
+mix,nomain|Aaron Rodgers>#12>Vinny Testaverde>T:CLE>Amari Cooper
+nomain,mix|Darren Sproles>T:NO>Morten Andersen>#8>Troy Aikman
+college,old|Drew Brees>C:Purdue>Jeff George (QB 1990)>T:SEA>Cortez Kennedy
+college,long|Jeremy Shockey>T:NO>Morten Andersen>#5>Matt Barkley>C:USC>Carson Palmer
+college,long|Jerome Bettis>T:PIT>Gary Anderson (K 1982)>#1>Connor Barth>C:North Carolina>Lawrence Taylor
+long,college|Michael Strahan>T:NYG>Morten Andersen>#5>Graham Gano>C:Florida State>Deion Sanders
+college,long|Ja'Marr Chase>#1>Gary Anderson (K 1982)>C:Syracuse>Dwight Freeney>T:ARI>Anquan Boldin
+long,number|Ben Roethlisberger>#7>Morten Andersen>#5>John Carney>T:NO>Kerry Collins
+noteam,noqb|Isaac Bruce>#88>Demaryius Thomas>#18>Peyton Manning
+college,nomain|Jamaal Charles>C:Texas>Phil Dawson>T:ARI>Emmitt Smith
+number,defense|Marshall Faulk>#28>Don Griffin (DB 1986)>T:SF>George Kittle
+defense,mix|Khalil Mack>T:CHI>Trace Armstrong>C:Florida>Emmitt Smith
+college,nomain|Rob Gronkowski>C:Arizona>Nick Folk>T:NYJ>Brandon Marshall
+nomain,old|Aeneas Williams>T:LAR>Roman Phifer>#55>Lance Briggs
+college,mix|Shaun Alexander>T:SEA>Sebastian Janikowski>C:Florida State>LeRoy Butler
+number,noteam|Russell Wilson>#3>Josh McCown>#13>Dan Marino
+mix,defense|Zach Thomas>#54>Dwight Freeney>T:DET>Calvin Johnson
+mix,number|Michael Thomas>T:NO>Drew Brees>#9>Matthew Stafford
+old,long|Cam Newton>T:NE>Adam Vinatieri>#4>Bryan Barker>T:WAS>Andre Reed
+noqb,number|Davante Adams>#17>Jeff Feagles>T:PHI>A.J. Brown
+old,noteam|Julius Peppers>#56>Chris Doleman>C:Pittsburgh>Larry Fitzgerald
+noqb,long|Joe Horn>T:ATL>Morten Andersen>#5>Matt Prater>T:DET>Barry Sanders
+defense,long|Donald Driver>T:GB>Charles Woodson>#21>DeAngelo Hall>T:ATL>Steven Jackson
+old,college|Dez Bryant>#88>Isaac Bruce>C:Santa Monica>Chad Ochocinco
+number,college|Brian Urlacher>#54>Eric Hill>C:LSU>Patrick Peterson
+long,noqb|Melvin Gordon>T:KC>Morten Andersen>#5>John Carney>T:NO>Cameron Jordan
+college,mix|Joe Horn>#84>Joey Galloway>C:Ohio State>Ezekiel Elliott
+noteam,old|Michael Strahan>C:Texas Southern>Will Moore>#81>Terrell Owens
+college,long|Jared Goff>T:LAR>John Carney>#1>Reggie Davis (WR 2017)>C:Georgia>Richard Seymour
+mix,college|Charles Haley>#95>Al Woods>C:LSU>Ja'Marr Chase
+college,defense|Christian McCaffrey>T:SF>Jack Reynolds>C:Tennessee>Cordarrelle Patterson
+college,noqb|Brian Westbrook>T:PHI>Julio Jones>C:Alabama>Shaun Alexander
+noteam,number|Adrian Peterson>#21>Dale Carter>C:Tennessee>Jason Witten
+defense,college|Cameron Heyward>C:Ohio State>Mike Vrabel>T:NE>Demaryius Thomas
+college,noteam|Donald Driver>#80>Darnell Dinkins>C:Pittsburgh>Chris Doleman
+long,college|Cam Newton>T:NE>Adam Vinatieri>#4>AJ McCarron>C:Alabama>Amari Cooper
+noteam,noqb|DeMarcus Ware>#94>Kyle Peko>C:Oregon State>Steven Jackson
+old,mix|Greg Olsen>C:Notre Dame>John Carney>T:TB>Derrick Brooks
+number,defense|Zach Thomas>#55>Terrell Suggs>#56>Julius Peppers
+defense,nomain|Tiki Barber>#21>DeAngelo Hall>T:WAS>Andre Reed
+defense,college|Marshawn Lynch>C:California>Andre Carter (DE 2001)>#96>Richard Dent
+mix,college|Philip Rivers>T:LAC>John Carney>C:Notre Dame>Jerome Bettis
+old,college|Ben Roethlisberger>C:Miami (Ohio)>Bob Babich>T:LAC>LaDainian Tomlinson
+college,noteam|Matt Forte>#22>Eric Metcalf>C:Texas>Jamaal Charles
+nomain,old|Curtis Martin>C:Pittsburgh>Chris Doleman>T:ATL>Tony Gonzalez
+mix,defense|Reggie Wayne>T:NE>Andre Tippett>C:Iowa>George Kittle
+college,noqb|J.J. Watt>T:ARI>Jeff Feagles>C:Miami>Michael Irvin
+mix,nomain|Patrick Willis>C:Mississippi>Eli Manning>T:LAC>Ezekiel Elliott
+defense,old|Philip Rivers>T:LAC>Junior Seau>T:NE>Demaryius Thomas
+number,college|Russell Wilson>C:N.C. State>Erik Kramer>#12>Andrew Luck
+noteam,college|Cameron Heyward>#97>Geno Atkins>C:Georgia>Todd Gurley
+nomain,mix|Dak Prescott>#4>John Kasay>T:SEA>Ahman Green
+defense,nomain|T.Y. Hilton>T:DAL>Aaron Glenn>#26>Saquon Barkley
+college,number|Eddie George>C:Ohio State>Mike Tomczak>#18>A.J. Green
+college,old|Andre Reed>T:WAS>Mark Moseley>C:Texas A&M>Myles Garrett
+noqb,college|Roddy White>T:ATL>John Abraham>C:South Carolina>Jared Cook
+noteam,noqb|A.J. Green>#18>Brandin Cooks>#14>Amon-Ra St. Brown
+old,mix|Barry Sanders>T:DET>Jon Kitna>#8>Troy Aikman
+mix,defense|Torry Holt>C:N.C. State>Adrian Wilson>T:ARI>A.J. Green
+long,mix|Patrick Willis>T:SF>Gary Anderson (K 1982)>#1>Jalen Hurts>C:Alabama>Shaun Alexander
+mix,noqb|Fred Warner>#48>Trey Junkin>T:NYG>Michael Strahan
+mix,long|Kevin Williams>T:MIN>Morten Andersen>#5>Tress Way>C:Oklahoma>Kyler Murray
+mix,noteam|Maurice Jones-Drew>C:UCLA>Matt Moore>#8>Stefon Diggs
+mix,long|Jalen Ramsey>#5>Morten Andersen>C:Michigan State>Ed Budde>T:KC>Derrick Thomas
+noqb,number|Richard Seymour>#93>Calais Campbell>T:ATL>Joe Horn
+old,number|Cameron Heyward>#97>Bryant Young>T:SF>Alex Smith
+number,college|Geno Atkins>C:Georgia>John Jenkins (DL 2013)>#94>DeMarcus Ware
+nomain,number|Kevin Williams>T:NO>Morten Andersen>#8>Matt Schaub
+mix,nomain|Charles Haley>T:DAL>Keith Brooking>C:Georgia Tech>Calvin Johnson
+number,college|Lawrence Taylor>C:North Carolina>Vonnie Holliday>#99>Jason Taylor
+nomain,college|Ray Lewis>C:Miami>Jeff Feagles>T:NE>Stefon Diggs
+college,mix|Alvin Kamara>C:Tennessee>Jack Reynolds>T:SF>George Kittle
+defense,nomain|Chris Doleman>T:ATL>Calais Campbell>T:MIA>Thurman Thomas
+number,noqb|Eric Moulds>#80>Jerry Rice>T:SF>Kyle Juszczyk
+nomain,college|Junior Seau>C:USC>Matt Cassel>#7>Ben Roethlisberger
+college,noteam|Warren Sapp>C:Miami>Andre Johnson>#81>Torry Holt
+long,defense|Warren Sapp>C:Miami>Calais Campbell>#93>Dwight Freeney>T:SEA>Brandon Marshall
+noteam,old|Justin Jefferson>C:LSU>Greg Jackson>#47>John Lynch
+nomain,college|Matt Ryan>T:IND>Bertrand Berry>C:Notre Dame>Tim Brown
+noteam,old|Fred Taylor>C:Florida>Lomas Brown>#75>Shane Dronett>#94>DeMarcus Ware
+college,number|Roger Craig>#33>Greg Jones (FB 2004)>C:Florida State>Derrick Brooks
+mix,defense|Brian Dawkins>#20>Mike Adams (FS 2004)>T:HOU>Stefon Diggs
+college,number|Hines Ward>C:Georgia>Garrison Hearst>#20>Brian Dawkins
+college,noqb|Jeremy Shockey>C:Miami>Jeff Feagles>#10>DeAndre Hopkins
+college,mix|Aaron Donald>C:Pittsburgh>Andy Lee>T:SF>Frank Gore
+defense,number|DeAngelo Williams>#34>Antonio Hamilton>T:TB>Tom Brady
+defense,long|John Elway>T:IND>Jeff Zgonina>#74>Jonathan Bullard>T:SEA>Shaun Alexander
+college,nomain|Lawrence Taylor>C:North Carolina>James Hurst>T:BAL>Shannon Sharpe
+noqb,number|Ben Roethlisberger>#7>Morten Andersen>T:KC>Chris Jones
+number,old|Darrelle Revis>#24>Charles Woodson>T:LV>Jerry Rice
+noqb,number|George Kittle>T:SF>Jerry Rice>#80>Andre Johnson
+long,college|Justin Herbert>T:LAC>John Carney>#1>Mike Vick>C:Virginia Tech>Bruce Smith
+mix,nomain|Chris Jones>#95>Jason Ferguson>C:Georgia>Hines Ward
+college,long|Keenan Allen>T:CHI>George Blanda>C:Kentucky>Corey Peters>T:JAX>Torry Holt
+number,nomain|Derrick Thomas>C:Alabama>Chris Mohr>#13>Michael Thomas
+old,mix|T.J. Watt>#90>Jeff Zgonina>T:ATL>Deion Sanders
+number,noqb|Lawrence Taylor>T:NYG>Mason Crosby>#21>Todd Gurley
+noqb,nomain|Charles Woodson>T:GB>John Schmitt>C:Hofstra>Marques Colston
+college,noteam|Ronnie Lott>C:USC>Matt Cassel>#8>Kirk Cousins
+long,number|Edgerrin James>T:IND>Adam Vinatieri>#4>John Kasay>C:Georgia>Geno Atkins
+nomain,long|Jeremy Shockey>T:NO>Morten Andersen>#5>John Carney>T:LAR>Jalen Ramsey
+college,noqb|Kirk Cousins>#18>Jeff Feagles>C:Miami>Edgerrin James
+nomain,mix|Todd Gurley>C:Georgia>Benjamin Watson>T:NE>Darrelle Revis
+noqb,old|Alvin Kamara>T:NO>Bob Young>T:ARI>James Conner
+nomain,number|Curtis Martin>T:NE>Tom Brady>#12>Jim Kelly
+college,defense|Tyreek Hill>C:Oklahoma State>Kevin Williams>#94>DeMarcus Ware
+defense,nomain|Matt Ryan>T:IND>Jeff Zgonina>#90>Julius Peppers
+defense,old|Eli Manning>T:LAC>Joe Phillips (DL 1986)>T:MIN>Justin Jefferson
+nomain,old|Anquan Boldin>T:BAL>Vinny Testaverde>T:NYJ>Steve Atwater
+noteam,long|Michael Thomas>C:Ohio State>Jim Marshall>#70>Bobby Massie>C:Mississippi>Mike Wallace
+college,mix|Warren Sapp>C:Miami>Jeff Feagles>T:ARI>Chris Johnson
+college,mix|Troy Aikman>C:UCLA>Billy Kilmer>#17>Philip Rivers
+long,mix|Brian Dawkins>T:PHI>Gary Anderson (K 1982)>#1>Danny Etling>C:LSU>Jarvis Landry
+college,nomain|Eli Manning>C:Mississippi>Fred McAfee>#25>Jamaal Charles
+college,old|Jared Goff>C:California>Tony Gonzalez>#88>Marvin Harrison
+noteam,mix|Jarvis Landry>#14>Andy Lee>C:Pittsburgh>James Conner
+old,number|Julio Jones>#11>Mark Brunell>T:JAX>Torry Holt
+defense,college|Edgerrin James>T:SEA>Brandon Mebane>C:California>Cameron Jordan
+mix,old|Tim Brown>C:Notre Dame>John Carney>T:LAR>Steven Jackson
+mix,noteam|Zach Thomas>C:Texas Tech>Danny Amendola>#80>Jerry Rice
+old,nomain|J.J. Watt>T:ARI>Fred McAfee>#30>Terrell Davis
+noteam,long|Geno Smith>#7>Morten Andersen>#5>Josh Johnson (QB 2008)>#8>DeAndre Hopkins
+defense,nomain|Jason Witten>T:LV>DeAngelo Hall>T:ATL>Tony Gonzalez
+noteam,number|Jerome Bettis>C:Notre Dame>Anthony Fasano>#80>Jerry Rice
+long,noqb|John Elway>T:IND>Adam Vinatieri>#4>Phil Dawson>T:SF>Charles Haley
+nomain,long|Steve Atwater>T:NYJ>Aaron Rodgers>#8>Ryan Longwell>C:California>Keenan Allen
+nomain,defense|Justin Jefferson>C:LSU>Tory James>T:DEN>DeMarcus Ware
+defense,nomain|Hines Ward>C:Georgia>John Jenkins (DL 2013)>T:BAL>Dallas Clark
+old,noqb|Von Miller>T:BUF>Gary Anderson (K 1982)>C:Syracuse>Marvin Harrison
+noqb,noteam|J.J. Watt>#99>Dwight Freeney>#54>Fred Warner
+noqb,number|T.Y. Hilton>#16>Shayne Graham>T:CIN>Geno Atkins
+nomain,mix|Marvin Harrison>#88>Brian Kinchen>T:NE>Antonio Brown
+nomain,old|LaDainian Tomlinson>T:NYJ>Vinny Testaverde>T:NE>John Lynch
+noqb,long|Larry Johnson>T:KC>Morten Andersen>#5>Robbie Gould>T:SF>Kyle Juszczyk
+noqb,mix|Cameron Jordan>C:California>Ray Wersching>#14>Amon-Ra St. Brown
+old,long|Dwight Freeney>T:IND>Adam Vinatieri>#4>Phil Dawson>T:SF>Isaac Bruce
+mix,long|Brian Dawkins>T:PHI>Gary Anderson (K 1982)>#1>Warren Moon>C:West Los Angeles>Isaac Bruce
+college,nomain|Jimmy Graham>C:Miami>Jeff Feagles>T:PHI>Mike Vick
+mix,long|Tony Gonzalez>T:ATL>Morten Andersen>#5>Danny Etling>C:Purdue>Drew Brees
+number,mix|Santana Moss>#83>Kendall Gammon>T:PIT>Jerome Bettis
+college,noqb|T.J. Watt>C:Wisconsin>Dan Turk>T:LV>Richard Seymour
+noteam,number|Josh Allen>#17>Greg Joseph>#40>Kyle Juszczyk
+long,college|Isaac Bruce>T:SF>Gary Anderson (K 1982)>C:Syracuse>Chandler Jones>T:LV>Antonio Brown
+college,noteam|Marcus Allen>C:USC>Robert Woods>#10>Eli Manning
+college,mix|John Lynch>C:Stanford>John Elway>#7>Patrick Peterson
+defense,number|Fred Taylor>#21>Deion Sanders>T:BAL>Steve Smith
+noqb,number|Patrick Peterson>#20>Frank Gore>T:BUF>Andre Reed
+college,old|Travis Kelce>T:KC>Todd Peterson>C:Georgia>Todd Gurley
+old,college|Warren Sapp>C:Miami>Micheal Barrow>T:WAS>Bruce Smith
+college,old|Deion Sanders>T:WAS>Henry Ellard>C:Fresno State>Davante Adams
+noqb,nomain|Andre Johnson>T:IND>Jeff Zgonina>T:LAR>Aeneas Williams
+noqb,college|Joe Mixon>C:Oklahoma>Adrian Peterson>T:DET>Barry Sanders
+old,long|Kevin Greene>T:PIT>Gary Anderson (K 1982)>#1>John Carney>T:NO>Derek Carr
+defense,old|Chris Doleman>T:ATL>Jeff Zgonina>T:HOU>Ahman Green
+college,noteam|Keenan Allen>C:California>DeSean Jackson>#10>Tyreek Hill
+noqb,number|Derrick Brooks>T:TB>Matt Bryant>#8>Kirk Cousins
+long,college|Andre Johnson>T:TEN>George Blanda>C:Kentucky>Jeff Van Note>T:ATL>Deion Sanders
+noteam,college|Alge Crumpler>C:North Carolina>Mitchell Trubisky>#11>Alex Smith
+noteam,college|Marshawn Lynch>C:California>David Binn>#54>Brian Urlacher
+number,mix|Jimmy Graham>#80>Jerry Rice>T:LV>Jason Witten
+noteam,noqb|Alvin Kamara>C:Tennessee>Aubrayo Franklin>#90>T.J. Watt
+noqb,noteam|Ty Law>C:Michigan>Jonathan Goodwin>#59>Luke Kuechly
+nomain,college|Calvin Johnson>#81>Kassim Osgood>C:San Diego State>Marshall Faulk
+defense,number|Fred Taylor>#28>Darrell Green>T:WAS>Shaun Alexander
+noteam,defense|Derek Carr>#4>Jason Pierre-Paul>#54>Eric Hill>C:LSU>Justin Jefferson
+mix,number|Hines Ward>#15>Earl Morrall>T:IND>John Elway
+number,mix|Rod Woodson>T:LV>Charles Woodson>#21>LaDainian Tomlinson
+number,college|Dez Bryant>C:Oklahoma State>R.W. McQuarters>#25>LeSean McCoy
+nomain,long|Mike Vick>#7>Morten Andersen>#5>John Carney>T:LAR>Aeneas Williams
+college,old|Doug Martin>T:TB>Vinny Testaverde>C:Miami>Reggie Wayne
+mix,nomain|Chris Johnson>T:ARI>Mike Leach>C:Boston>Luke Kuechly
+number,nomain|Peyton Manning>T:DEN>Justin Bannan>#97>Bryant Young
+mix,nomain|Kyle Juszczyk>T:BAL>Josh Johnson (QB 2008)>#17>Davante Adams
+defense,number|Rod Woodson>#26>Aaron Glenn>T:DAL>Michael Irvin
+number,defense|Ty Law>#24>Charles Woodson>T:LV>Roger Craig
+college,defense|LeSean McCoy>T:BUF>Troy Vincent>C:Wisconsin>Owen Daniels
+noteam,college|Ronnie Lott>C:USC>Matt Cassel>#8>Adrian Peterson
+noqb,college|Derrick Thomas>C:Alabama>Andre Smith (T 2009)>T:BAL>Ray Lewis
+college,long|Dak Prescott>#4>Adam Vinatieri>C:South Dakota State>Dallas Goedert>T:PHI>Richard Dent
+nomain,noqb|Joe Horn>T:KC>John Carney>C:Notre Dame>Tim Brown
+noteam,number|Larry Fitzgerald>#11>Josh Reynolds>C:Texas A&M>Myles Garrett
+college,long|Santana Moss>C:Miami>Jeff Feagles>#10>Fran Tarkenton>T:NYG>Russell Wilson
+old,mix|Marshall Faulk>T:IND>Ricky Proehl>#88>Michael Irvin
+nomain,defense|Steve Atwater>T:NYJ>Aaron Glenn>T:NO>Dez Bryant
+noqb,old|Frank Gore>T:IND>Adam Vinatieri>T:NE>Rich Gannon
+old,college|Rod Woodson>C:Purdue>Jeff Zgonina>T:ATL>Matt Ryan
+old,long|Aeneas Williams>T:LAR>John Carney>#1>Matt Turk>T:MIA>Jarvis Landry
+college,long|Heath Miller>T:PIT>Gary Anderson (K 1982)>#1>Nickell Robey-Coleman>C:USC>Junior Seau
+noqb,noteam|Bobby Wagner>#54>Todd F. Collins>C:Tennessee>Peyton Manning
+college,mix|Mike Evans>C:Texas A&M>Mark Moseley>T:WAS>Darrell Green
+number,mix|Devin Hester>#14>Vinny Testaverde>T:NYJ>Steve Atwater
+noqb,old|Ja'Marr Chase>#1>Gary Anderson (K 1982)>T:BUF>Josh Allen
+number,college|Shannon Sharpe>#82>Dante' Hall>C:Texas A&M>Myles Garrett
+long,defense|Terry McLaurin>T:WAS>Darrell Green>#28>Cris Dishman>#26>Rod Woodson
+noqb,college|Ronnie Lott>T:KC>Vonnie Holliday>C:North Carolina>Julius Peppers
+old,noteam|Reggie Wayne>C:Miami>Micheal Barrow>#56>Chris Doleman
+noqb,old|Chris Johnson>T:TEN>Gary Anderson (K 1982)>T:SF>Fred Warner
+long,college|Kyle Juszczyk>T:SF>Gary Anderson (K 1982)>#1>Jalen Hurts>C:Alabama>Amari Cooper
+long,old|Tim Brown>T:LV>George Blanda>C:Kentucky>Irv Goode>T:ARI>Adrian Peterson
+nomain,number|Andre Johnson>#80>Keenan McCardell>T:CLE>Jamal Lewis
+defense,nomain|Richard Dent>T:SF>Rod Woodson>T:BAL>DeAndre Hopkins
+nomain,mix|Jerry Rice>T:DEN>Matt Prater>#5>Jalen Ramsey
+noqb,college|Andy Dalton>T:DAL>Tyron Smith>C:USC>Ronnie Lott
+mix,number|Michael Strahan>T:NYG>Morten Andersen>#8>Aaron Rodgers
+noteam,long|Khalil Mack>#52>Ray Lewis>C:Miami>Jeff Feagles>#17>Josh Allen
+defense,old|Ty Law>#24>Charles Woodson>T:LV>Matt Schaub
+college,noqb|Kevin Greene>C:Auburn>Al Del Greco>T:TEN>Julio Jones
+noqb,mix|Carson Palmer>#3>John Carney>T:NO>Jimmy Graham
+college,noteam|Von Miller>#24>Marshawn Lynch>C:California>Aaron Rodgers
+noteam,old|Derrick Henry>#22>Lorenzo Neal>#42>Lyle Blackwood>C:TCU>Andy Dalton
+college,noteam|Tiki Barber>C:Virginia>Matt Schaub>#8>Aaron Rodgers
+long,nomain|Joe Mixon>#28>Darrell Green>T:WAS>Santana Moss>C:Miami>Michael Irvin
+long,defense|Russell Wilson>T:PIT>Jeff Zgonina>#74>Ndamukong Suh>T:TB>Derrick Brooks
+nomain,college|Russell Wilson>T:DEN>Marcedes Lewis>C:UCLA>Maurice Jones-Drew
+noteam,noqb|Maurice Jones-Drew>#21>Deion Sanders>C:Florida State>Anquan Boldin
+noteam,number|Mike Evans>#13>Jalen Mills>#30>Terrell Davis
+noqb,nomain|Shannon Sharpe>#84>Marcedes Lewis>T:GB>Charles Woodson
+number,mix|James Conner>T:ARI>Jeff Feagles>#17>Devin Hester
+number,defense|Aeneas Williams>#35>Corey Ivy>T:TB>Mike Evans
+number,college|Le'Veon Bell>C:Michigan State>Domata Peko Sr.>#94>Kevin Williams
+long,mix|Darrell Green>T:WAS>Ray Brown (G 1986)>#61>Tyler Gauthier>C:Miami>Devin Hester
+noteam,college|Terrell Owens>#81>Andre Johnson>C:Miami>Ray Lewis
+number,noteam|LeSean McCoy>#25>Brett Maxie>#39>Steven Jackson
+old,number|Budda Baker>#3>Eddie Murray>T:MIN>Aaron Jones
+long,college|Tiki Barber>T:NYG>Morten Andersen>#5>Desmond Ridder>C:Cincinnati>Travis Kelce
+long,old|Stefon Diggs>T:NE>Adam Vinatieri>#4>Brad Maynard>T:NYG>Tiki Barber
+old,long|Julio Jones>T:TEN>George Blanda>C:Kentucky>Art Still>T:KC>Marcus Allen
+old,noteam|Julio Jones>#80>Chris Calloway>C:Michigan>Charles Woodson
+noqb,mix|Jim Kelly>T:BUF>Gary Anderson (K 1982)>C:Syracuse>Dwight Freeney
+noteam,old|Earl Thomas>#29>Corey Sawyer>C:Florida State>Laveranues Coles
+defense,college|Derrick Henry>T:BAL>Deion Sanders>C:Florida State>Jalen Ramsey
+number,defense|Richard Seymour>#93>Calais Campbell>T:ARI>DeAndre Hopkins
+college,long|Maurice Jones-Drew>T:LV>George Blanda>C:Kentucky>Jeff Van Note>T:ATL>Dwight Freeney
+mix,noteam|Jason Taylor>#55>Junior Seau>C:USC>Carson Palmer
+noteam,long|Marcus Allen>C:USC>Junior Seau>#55>D.J. Williams (MLB 2004)>C:Miami>Jim Kelly
+noqb,old|Jared Allen>T:MIN>Gary Anderson (K 1982)>T:PIT>DK Metcalf
+college,old|Terrell Owens>T:BUF>Ted Washington>C:Louisville>Lamar Jackson
+old,noteam|Andy Dalton>#14>Brad Johnson>C:Florida State>Randy Moss
+nomain,old|Frank Gore>T:NYJ>Mark Brunell>#8>Lamar Jackson
+long,noteam|Eric Allen>C:Arizona State>Ray Brown (G 1986)>#61>Chris Morris (C 2006)>C:Michigan State>Le'Veon Bell
+number,old|Carson Palmer>#3>John Carney>#5>Donovan McNabb
+long,nomain|Marques Colston>#12>Tom Brady>C:Michigan>Mike Kenn>T:ATL>Devin Hester
+defense,old|Adrian Peterson>T:WAS>Jason Taylor>#55>Derrick Brooks
+nomain,old|Marcus Allen>T:KC>Eddie Murray>T:WAS>Bruce Smith
+noteam,college|Kevin Greene>C:Auburn>Jason Campbell>#8>Lamar Jackson
+noteam,long|Lamar Jackson>#8>Morten Andersen>#5>Graham Gano>#4>Brett Favre
+noqb,old|Kevin Williams>T:MIN>Gary Anderson (K 1982)>T:PIT>Kevin Greene
+noqb,old|Khalil Mack>T:LAC>John Carney>T:KC>Eric Berry
+college,mix|Rich Gannon>C:Delaware>Joe Flacco>#5>Jarvis Landry
+noqb,nomain|Kevin Williams>T:SEA>Blair Bush>T:GB>Charles Woodson
+long,college|Brett Favre>#4>Adam Vinatieri>C:South Dakota State>Todd Bouman>T:NO>Jarvis Landry
+nomain,defense|Bruce Smith>T:WAS>Paul Krause>#22>Derrick Henry
+old,number|Roddy White>T:ATL>Deion Sanders>#21>Eric Allen
+mix,defense|Muhsin Muhammad>C:Michigan State>Domata Peko Sr.>T:DEN>John Elway
+college,defense|Charles Woodson>C:Michigan>Brandon Graham>T:PHI>Donovan McNabb
+number,noteam|Rich Gannon>#12>Darren Waller>#84>Roddy White
+college,defense|Roddy White>T:ATL>John Washington (DL 1986)>C:Oklahoma State>Kevin Williams
+college,number|Marcus Allen>C:USC>Matt Cassel>#8>Matt Hasselbeck
+mix,college|Jalen Ramsey>T:LAR>Anthony Newman>C:Oregon>Justin Herbert
+nomain,noqb|Demaryius Thomas>#18>Jeff Feagles>T:NYG>Kyle Rudolph
+nomain,mix|Fred Warner>C:BYU>Lee Johnson (SPEC 1985)>#12>Andrew Luck
+mix,college|Randy Moss>T:SF>Wesley Walls>C:Mississippi>Deuce McAllister

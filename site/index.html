@@ -142,6 +142,32 @@ h1 a{color:inherit;text-decoration:none;cursor:pointer}h1 a:focus-visible{outlin
 .acc[open] summary::after{transform:rotate(-135deg) translate(-3px,-3px)}.acc summary:hover{color:var(--acc-text)}
 .accb{display:grid;gap:14px;padding:0 18px 18px}.accb p{margin:0;line-height:1.5}.accb .ex{background:var(--bg)}
 @media(max-width:620px){.modecards{grid-template-columns:minmax(0,1fr)}.mc{padding:13px 16px}}
+
+.hl,.hr{display:grid;gap:18px;grid-template-columns:minmax(0,1fr);align-content:start}
+.mright{display:flex;gap:8px;align-items:center}.howb{border:1.5px solid var(--line);background:none;color:var(--ink);font:600 13px var(--body);padding:7px 12px;border-radius:999px;cursor:pointer}.howb:hover{border-color:var(--mu)}
+.mlabel{font:600 13px var(--cond);letter-spacing:1.2px;text-transform:uppercase;color:var(--mu)}
+.howside{display:none}@media(max-width:560px){.howb{width:36px;height:36px;padding:0;display:grid;place-items:center}.howb span{display:none}.howb::before{content:'?';font:800 16px var(--body)}}.hcard #hbody{display:grid;gap:12px}.hcard #hbody p,.howside p{margin:0;line-height:1.5}.hcard .steps{margin:0}
+.foot .tbtn{font-size:12px;padding:0}
+@media(min-width:1000px){
+ main{max-width:1160px}
+ .home{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);column-gap:40px;align-items:start}.home>.foot{grid-column:1/-1}
+ .home .bigplay{padding:22px 16px 18px!important}
+ #gH,#gB,#gT{display:grid;column-gap:36px;align-items:start;grid-template-columns:minmax(0,460px) minmax(0,1fr)}
+ #gH>*,#gB>*,#gT>*{grid-column:1}
+ #gH{grid-template-rows:repeat(4,auto) 1fr}#gB{grid-template-rows:repeat(3,auto) 1fr}#gT{grid-template-rows:repeat(5,auto) 1fr}
+ #gH>.chain,#gH>.howside{grid-column:2;grid-row:1/span 5}#gB>.chain,#gB>.howside{grid-column:2;grid-row:1/span 4}#gT>#tvRows,#gT>.howside{grid-column:2;grid-row:1/span 6}
+ #gH>.chain,#gB>.chain{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;margin:0;border:1px solid var(--line);border-radius:16px;padding:16px 18px 16px 44px;
+  background:radial-gradient(circle,var(--line) 1.6px,transparent 1.8px) 23px 0/6px 8px repeat-y,var(--panel)}
+ #gH>.chain:empty,#gB>.chain:empty{display:none}
+ .chain:not([hidden]):not(:empty)~.howside,#tvRows:not(:empty)~.howside{display:none!important}
+ .howside{display:grid;gap:12px;border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:var(--panel);align-content:start}.howside h3{margin:0;font:900 22px var(--disp);text-transform:uppercase;letter-spacing:.5px}
+ .howside .steps{margin:0}#gT>#tvRows:not(:empty){border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--panel)}
+ .dock.stick{position:static;box-shadow:none;padding-bottom:0}.dock .mini{display:none!important}
+ .tabs button{font-size:24px}.tabs{gap:28px}
+ .tv{grid-template-columns:minmax(0,1fr)!important}
+ #gH>.chain::before,#gB>.chain::before{content:"Your drive";margin:0 0 10px -6px;font:700 12px var(--cond);letter-spacing:1.6px;text-transform:uppercase;color:var(--mu)}#gB>.chain::before{content:"Your chain"}
+ .chain .p{font-size:17px}
+}
 #tv2+.acbox{left:auto}
 .rank{display:grid;gap:6px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg)}.rank b{font:800 20px/1.15 var(--disp);text-transform:uppercase;letter-spacing:.3px}.rank b em{font-style:normal;color:var(--acc-text)}
 .rank>span,.rx{font-size:13px;color:var(--mu)}.rank svg{width:100%;height:auto;display:block;overflow:visible}.rank .area{fill:var(--mu);opacity:.18}.rank .area.me{fill:var(--acc);opacity:.55}.rank .crv{fill:none;stroke:var(--mu);stroke-width:1.5;vector-effect:non-scaling-stroke}.rank .mk{stroke:var(--acc-text);stroke-width:2;vector-effect:non-scaling-stroke}.rank .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2;vector-effect:non-scaling-stroke}.rx{display:flex;justify-content:space-between;gap:8px;white-space:nowrap;margin-top:-2px}.home .vs b{white-space:nowrap}.home .vs{align-items:end}
@@ -156,41 +182,43 @@ h1 a{color:inherit;text-decoration:none;cursor:pointer}h1 a:focus-visible{outlin
 <body>
 
 <main>
-<div class="beta"><span class="betatag">Beta</span><span>Work in progress</span><span aria-hidden="true">·</span><button class="tbtn" id="repTop">Report a mistake</button></div>
+
 <header><div class="top"><h1><a id="logo" href="#home" aria-label="Lateral home"><svg class="mascot" viewBox="0 0 120 120" aria-hidden="true"><g stroke="#3b1f0f" stroke-linecap="round" stroke-linejoin="round"><path d="M48 92l-6 16M72 92l6 16" stroke-width="5" fill="none"/><path d="M33 110h14M73 110h14" stroke-width="7"/><path d="M28 66C18 72 14 80 13 88" stroke-width="5" fill="none"/><circle cx="13" cy="90" r="7.5" fill="#fff" stroke-width="3.5"/><g class="wave"><path d="M92 54C102 46 106 36 106 26" stroke-width="5" fill="none"/><circle cx="106" cy="21" r="7.5" fill="#fff" stroke-width="3.5"/></g><g transform="rotate(-14 60 64)"><path d="M14 64C26 30 94 30 106 64C94 98 26 98 14 64Z" fill="#9a5a32" stroke-width="4"/><path d="M27 44Q22 64 27 84M93 44Q98 64 93 84" stroke="#f3eadf" stroke-width="5" fill="none"/><path d="M46 41H74M52 36V46M60 36V46M68 36V46" stroke="#f3eadf" stroke-width="3.5"/><ellipse cx="49" cy="61" rx="8" ry="9.5" fill="#fff" stroke-width="3"/><ellipse cx="71" cy="61" rx="8" ry="9.5" fill="#fff" stroke-width="3"/><circle cx="51" cy="63" r="4" fill="#1d1d1d" stroke="none"/><circle cx="73" cy="63" r="4" fill="#1d1d1d" stroke="none"/><circle cx="52.5" cy="61.5" r="1.4" fill="#fff" stroke="none"/><circle cx="74.5" cy="61.5" r="1.4" fill="#fff" stroke="none"/><path d="M49 76Q60 86 71 76" stroke-width="3.5" fill="#5a1d10"/></g></g></svg><span class="wm">Lat<span>eral</span></span></a></h1><div class="topcta" id="topcta"></div></div><p class="sub" id="date"></p></header>
 <section class="home" id="home"></section>
 <div id="app" hidden>
 <div class="tabs" role="tablist"><button role="tab" id="tH">Lateral</button><button role="tab" id="tT">Trivia</button><button role="tab" id="tB">Ball Knowledge</button></div>
 <div id="gH">
-<div class="modes"><div class="segc" role="group" aria-label="Mode"><button id="mDaily">Daily</button><button id="mUnl">Unlimited</button></div><button class="hardt" id="mHard" aria-pressed="false">Hard mode</button></div>
+<div class="modes"><div class="segc" role="group" aria-label="Mode"><button id="mDaily">Daily</button><button id="mUnl">Unlimited</button></div><div class="mright"><button class="howb" data-how="0" aria-label="How to play"><span>How to play</span></button><button class="hardt" id="mHard" aria-pressed="false">Hard mode</button></div></div>
 <section class="board" aria-label="Scoreboard">
 <div class="vs"><div><small>Start</small><b id="sa"></b><div class="badges" id="sat"></div></div><i>→</i><div><small>Target</small><b id="sb"></b></div></div>
 <div class="stats" id="stats"></div></section>
 <div class="rcards" id="rcards"></div>
-<div class="chain" id="chain"></div>
+<div class="chain" id="chain"></div><aside class="howside" data-how="0"></aside>
 <div class="dock" id="dockH"><div class="mini"><span>Target <b id="mT"></b></span><b id="mClk"></b></div><p class="msg" id="msg" aria-live="polite"></p><button class="tbtn replink" id="repMiss" hidden>Think that's wrong? Report it</button>
 <div id="ctl"></div></div>
 </div>
 <div id="gB" hidden>
+<div class="modes"><span class="mlabel">Endless chain · 30-second clock</span><button class="howb" data-how="2" aria-label="How to play"><span>How to play</span></button></div>
 <section class="board" aria-label="Ball Knowledge"><div class="vs" style="grid-template-columns:1fr"><div><small>On the ball</small><b id="bkOn">Ball Knowledge</b><div class="badges" id="bkBadge"></div></div></div><div class="stats" id="bkStats"></div></section>
-<div class="chain" id="bkChain"></div>
+<div class="chain" id="bkChain"></div><aside class="howside" data-how="2"></aside>
 <div class="dock" id="dockB"><div class="mini"><span>Strikes <b id="mS"></b></span><b id="mBk"></b></div><p class="msg" id="bkMsg" aria-live="polite"></p><button class="tbtn replink" id="repBK" hidden>Think that's wrong? Report it</button>
 <div id="bkCtl"></div></div>
 </div>
 <div id="gT" hidden>
-<div class="modes"><div class="segc" role="group" aria-label="Trivia mode"><button id="tvD">Daily</button><button id="tvU">Unlimited</button></div></div>
+<div class="modes"><div class="segc" role="group" aria-label="Trivia mode"><button id="tvD">Daily</button><button id="tvU">Unlimited</button></div><button class="howb" data-how="1" aria-label="How to play"><span>How to play</span></button></div>
 <section class="board" aria-label="Today's player"><div><div class="meta" id="tvLbl">Today's player</div><div class="who" id="tvName"></div><div class="meta" id="tvMeta"></div></div><div class="stats" id="tvStats"></div></section>
-<p class="rules">Name a number he wore, a team he played for and his college. Greens lock in. 3 tries.</p>
-<div id="tvRows" style="display:grid;gap:6px"></div>
+<p class="rules">Guess a number he wore, a team he played for and his college. Each correct answer turns green and stays locked in. You get 3 tries.</p>
+<div id="tvRows" style="display:grid;gap:6px;align-content:start"></div><aside class="howside" data-how="1"></aside>
 <p class="msg" id="tvMsg" aria-live="polite"></p>
 <div id="tvCtl"></div>
 </div>
 
-<p class="foot">Fan-made. Not affiliated with the NFL. Data: nflverse, College Football Data.</p>
+<p class="foot">Fan-made. Not affiliated with the NFL. Data: nflverse, College Football Data. · <button class="tbtn" id="repTop">Report a mistake</button></p>
 </div>
+<div class="rbox" id="hbox" hidden role="dialog" aria-modal="true" aria-labelledby="hboxT"><div class="rcard hcard"><h2 id="hboxT">How to play</h2><div id="hbody"></div><div class="row"><button type="button" class="btn" id="hclose">Got it</button></div></div></div>
 <div class="rbox" id="rbox" hidden role="dialog" aria-modal="true" aria-labelledby="rboxT">
 <form class="rcard" id="rform" name="report" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-<input type="hidden" name="form-name" value="report"><p hidden><label>Leave this empty <input name="bot-field"></label></p>
+<input type="hidden" name="form-name" value="report"><p hidden aria-hidden="true"><input name="bot-field" tabindex="-1" autocomplete="off"></p>
 <input type="hidden" name="context" id="rctx"><input type="hidden" name="subject" value="Lateral report (%{submissionId})">
 <h2 id="rboxT">Report a mistake</h2>
 <p class="rsub">Missing team, wrong number, bad college, a bug, or an idea. Every report helps.</p>
@@ -642,7 +670,7 @@ Curtis Martin>T:NYJ>Ed Reed>#20>Barry Sanders~Curtis Martin>#28>Justin Forsett>#
 Bobby Wagner>T:WAS>Deion Sanders>T:DAL>Dak Prescott~Bobby Wagner>#54>Jason Pierre-Paul>#4>Dak Prescott~0~Jason Witten;Zack Martin;Tyron Smith~Jason Witten;Zack Martin;Tyron Smith
 Todd Heap>T:BAL>Deion Sanders>T:DAL>DeMarcus Ware~Todd Heap>C:Arizona State>Terrell Suggs>#94>DeMarcus Ware~1~Peyton Manning;Terrell Owens;Larry Allen~Peyton Manning;Terrell Owens;Larry Allen
 Cameron Jordan>C:California>Tony Gonzalez>T:ATL>Brett Favre~Cameron Jordan>C:California>Trevor Davis>#4>Brett Favre~0~Randy Moss;Alan Faneca;Deion Sanders~Randy Moss;Alan Faneca;Deion Sanders
-Tom Brady>T:TB>Anthony Munoz>T:CIN>A.J. Green~Tom Brady>#12>Kirk Cousins>#18>A.J. Green~0~DeAndre Hopkins;J.J. Watt;Geno Atkins~DeAndre Hopkins;J.J. Watt;Geno Atkins
+Tom Brady>T:TB>Anthony Munoz>T:CIN>A.J. Green~Tom Brady>#12>Kirk Cousins>#18>A.J. Green~0~DeAndre Hopkins;J.J. Watt;Budda Baker~DeAndre Hopkins;J.J. Watt;Budda Baker
 Jimmy Smith>T:DAL>Ezekiel Elliott>C:Ohio State>Michael Thomas~Jimmy Smith>#82>Joey Galloway>#13>Michael Thomas~0~Drew Brees;Adrian Peterson;Brandon Marshall~Drew Brees;Adrian Peterson;Brandon Marshall
 Steve Smith>T:BAL>DeAndre Hopkins>#10>Eli Manning~Steve Smith>C:Utah>Josh Gordon>#10>Eli Manning~0~Michael Strahan;Brandon Marshall;Tiki Barber~Michael Strahan;Brandon Marshall;Tiki Barber
 Champ Bailey>T:DEN>Peyton Manning>T:IND>T.Y. Hilton~Champ Bailey>C:Georgia>Blair Walsh>#16>T.Y. Hilton~0~Andre Johnson;Dwight Freeney;Zack Martin~Andre Johnson;Dwight Freeney;Zack Martin
@@ -665,7 +693,7 @@ Ed Reed>T:NYJ>Ronnie Lott>C:USC>Amon-Ra St. Brown~Ed Reed>C:Miami>Devin Hester>#
 Ed Reed>T:NYJ>Brett Favre>T:MIN>Jared Allen~Ed Reed>C:Miami>Al-Quadin Muhammad>#69>Jared Allen~0~Tony Gonzalez;Randy Moss;Willie Roaf~Tony Gonzalez;Brett Favre;Randy Moss
 Patrick Mahomes>T:KC>Ronnie Lott>T:SF>Anquan Boldin~Patrick Mahomes>#15>Golden Tate>#81>Anquan Boldin~0~Ray Lewis;Larry Fitzgerald;Ed Reed~Ray Lewis;Larry Fitzgerald;Ed Reed
 Donovan McNabb>T:WAS>Deion Sanders>T:BAL>Ray Rice~Donovan McNabb>#5>Stephon Gilmore>#27>Ray Rice~1~Ray Lewis;Ed Reed;Kyle Juszczyk~Ray Lewis;Ed Reed;Kyle Juszczyk
-Demaryius Thomas>#88>Tony Gonzalez>T:KC>Jared Allen~Demaryius Thomas>C:Georgia Tech>Shaq Mason>#69>Jared Allen~0~Willie Roaf;Will Shields;Luke Kuechly~Brett Favre;Willie Roaf;Will Shields
+Demaryius Thomas>#88>Tony Gonzalez>T:KC>Jared Allen~Demaryius Thomas>C:Georgia Tech>Shaq Mason>#69>Jared Allen~0~Willie Roaf;Will Shields;Steve Hutchinson~Brett Favre;Willie Roaf;Will Shields
 Darrelle Revis>C:Pittsburgh>Larry Fitzgerald>T:ARI>Emmitt Smith~Darrelle Revis>#24>Ty Law>#22>Emmitt Smith~0~Larry Allen;Deion Sanders;Charles Haley~Larry Allen;Deion Sanders;Charles Haley
 Cordarrelle Patterson>T:LV>Jerry Rice>T:SF>Kyle Juszczyk~Cordarrelle Patterson>C:Tennessee>Dale Carter>#40>Kyle Juszczyk~0~Trent Williams;Steve Smith;George Kittle~Devin Hester;Trent Williams;Steve Smith
 Darrell Green>T:WAS>Champ Bailey>T:NO>Andy Dalton~Darrell Green>#28>Mark Ingram>#14>Andy Dalton~0~Zack Martin;A.J. Green;Khalil Mack~Zack Martin;A.J. Green;Khalil Mack
@@ -674,7 +702,7 @@ Jarvis Landry>#80>Jerry Rice>T:SEA>Greg Olsen~Jarvis Landry>#80>Andre Johnson>C:
 CeeDee Lamb>T:DAL>Deion Sanders>T:BAL>Ed Reed~CeeDee Lamb>#88>Michael Irvin>C:Miami>Ed Reed~0~Ray Lewis;Jonathan Ogden;Andre Johnson~Ray Lewis;Jonathan Ogden;Andre Johnson
 LeRoy Butler>C:Florida State>Randy Moss>T:TEN>Derrick Henry~LeRoy Butler>C:Florida State>Samari Rolle>#22>Derrick Henry~0~Andre Johnson;Adrian Peterson;Julio Jones~Andre Johnson;Adrian Peterson;Julio Jones
 Chris Johnson>#21>Deion Sanders>T:WAS>Bruce Smith~Chris Johnson>#23>Kyle Fuller (DB 2014)>C:Virginia Tech>Bruce Smith~0~Champ Bailey;Thurman Thomas;Andre Reed~Champ Bailey;Thurman Thomas;Andre Reed
-Antonio Brown>T:LV>Eric Dickerson>T:LAR>Aaron Donald~Antonio Brown>C:Central Michigan>J.J. Watt>#99>Aaron Donald~0~Bobby Wagner;Matthew Stafford;Von Miller~Bobby Wagner;Matthew Stafford;Von Miller
+Antonio Brown>T:LV>Eric Dickerson>T:LAR>Aaron Donald~Antonio Brown>C:Central Michigan>J.J. Watt>#99>Aaron Donald~0~Bobby Wagner;Matthew Stafford;Von Miller~Bobby Wagner;Matthew Stafford;Jalen Ramsey
 Larry Fitzgerald>T:ARI>Alan Faneca>T:PIT>Jerome Bettis~Larry Fitzgerald>#11>Steve Beuerlein>C:Notre Dame>Jerome Bettis~0~Rod Woodson;Dermontti Dawson;Troy Polamalu~Rod Woodson;Alan Faneca;Dermontti Dawson
 Donovan McNabb>T:MIN>Brett Favre>T:GB>Matt Hasselbeck~Donovan McNabb>#5>Morten Andersen>#8>Matt Hasselbeck~1~Jerry Rice;Andre Johnson;Walter Jones~Jerry Rice;Brett Favre;Andre Johnson
 Patrick Peterson>T:PIT>Antonio Brown>#17>Josh Allen~Patrick Peterson>#7>Case Keenum>#17>Josh Allen~0~LeSean McCoy;Von Miller;Amari Cooper~LeSean McCoy;Stefon Diggs;Von Miller
@@ -758,11 +786,11 @@ Dallas Clark>T:BAL>Rod Woodson>T:LV>Marshawn Lynch~Dallas Clark>#44>Joique Bell>
 Tom Brady>T:TB>Anthony Munoz>T:CIN>Ja'Marr Chase~Tom Brady>#12>Allen Robinson>#1>Ja'Marr Chase~0~Joe Flacco;Joe Burrow;Joe Mixon~Joe Flacco;Joe Burrow;Joe Mixon
 Derrick Mason>T:TEN>Bruce Matthews>C:USC>Junior Seau~Derrick Mason>#82>Billy Miller>C:USC>Junior Seau~0~Drew Brees;Tom Brady;Zach Thomas~Drew Brees;Tom Brady;Randy Moss
 Eddie George>T:TEN>Randy Moss>#84>Cordarrelle Patterson~Eddie George>#27>Arian Foster>C:Tennessee>Cordarrelle Patterson~0~Tom Brady;Jared Allen;Russell Wilson~Tom Brady;Jared Allen;Adrian Peterson
-Darrell Green>T:WAS>Deion Sanders>T:SF>Bryant Young~Darrell Green>#28>Dorsey Levens>C:Notre Dame>Bryant Young~0~Jerry Rice;Terrell Owens;Larry Allen~Jerry Rice;Terrell Owens;Larry Allen
+Darrell Green>T:WAS>Deion Sanders>T:SF>Bryant Young~Darrell Green>#28>Dorsey Levens>C:Notre Dame>Bryant Young~0~Jerry Rice;Terrell Owens;Rod Woodson~Jerry Rice;Terrell Owens;Rod Woodson
 Aaron Rodgers>T:PIT>Rod Woodson>T:LV>Amari Cooper~Aaron Rodgers>#8>Kirk Cousins>#18>Amari Cooper~0~Jason Witten;Zack Martin;Myles Garrett~Charles Woodson;Jason Witten;Zack Martin
 Darren Sproles>T:PHI>Terrell Owens>T:DAL>Troy Aikman~Darren Sproles>#43>Eric Kendricks>C:UCLA>Troy Aikman~1~Larry Allen;Deion Sanders;Emmitt Smith~Larry Allen;Deion Sanders;Emmitt Smith
 Drew Brees>T:LAC>Dwight Freeney>T:SEA>Cortez Kennedy~Drew Brees>#9>Brevin Jordan>C:Miami>Cortez Kennedy~0~Walter Jones;Kevin Mawae;Shaun Alexander~Walter Jones;Kevin Mawae;Shaun Alexander
-Jeremy Shockey>#80>Jerry Rice>T:LV>Carson Palmer~Jeremy Shockey>#80>Johnnie Morton>C:USC>Carson Palmer~0~Larry Fitzgerald;Terrell Owens;Dwight Freeney~Larry Fitzgerald;Terrell Owens;Dwight Freeney
+Jeremy Shockey>#80>Jerry Rice>T:LV>Carson Palmer~Jeremy Shockey>#80>Johnnie Morton>C:USC>Carson Palmer~0~Larry Fitzgerald;Terrell Owens;Richard Seymour~Larry Fitzgerald;Terrell Owens;Richard Seymour
 Jerome Bettis>T:PIT>Russell Wilson>T:NYG>Lawrence Taylor~Jerome Bettis>C:Notre Dame>Quenton Nelson>#56>Lawrence Taylor~0~Michael Strahan;Jessie Armstead~Michael Strahan;Jessie Armstead
 Michael Strahan>T:NYG>Morten Andersen>T:ATL>Deion Sanders~Michael Strahan>#92>Tony Bryant>C:Florida State>Deion Sanders~0~Jerry Rice;Bruce Smith;Ray Lewis~Jerry Rice;Bruce Smith;Ray Lewis
 Ja'Marr Chase>T:CIN>Terrell Owens>#81>Anquan Boldin~Ja'Marr Chase>C:LSU>Jarvis Landry>#80>Anquan Boldin~0~Ray Lewis;Larry Fitzgerald;Ed Reed~Ray Lewis;Larry Fitzgerald;Ed Reed
@@ -812,12 +840,12 @@ Russell Wilson>T:DEN>Peyton Manning>T:IND>Andrew Luck~Russell Wilson>#3>Brandin 
 Cameron Heyward>T:PIT>Jerome Bettis>T:LAR>Todd Gurley~Cameron Heyward>#97>Geno Atkins>C:Georgia>Todd Gurley~0~Aaron Donald;Julio Jones;Matt Ryan~Aaron Donald;Julio Jones;Matt Ryan
 Dak Prescott>#4>Brett Favre>T:GB>Ahman Green~Dak Prescott>C:Mississippi State>Darius Slay>#30>Ahman Green~0~Andre Johnson;Aaron Rodgers;Walter Jones~Andre Johnson;Aaron Rodgers;Walter Jones
 T.Y. Hilton>T:DAL>Terrell Owens>T:PHI>Saquon Barkley~T.Y. Hilton>#13>Kerry Collins>C:Penn State>Saquon Barkley~0~Jason Kelce;Eli Manning;Lane Johnson~Jason Kelce;Eli Manning;Lane Johnson
-Eddie George>T:DAL>Terrell Owens>T:CIN>A.J. Green~Eddie George>#27>Knowshon Moreno>C:Georgia>A.J. Green~0~J.J. Watt;Geno Atkins;Budda Baker~DeAndre Hopkins;J.J. Watt;Geno Atkins
+Eddie George>T:DAL>Terrell Owens>T:CIN>A.J. Green~Eddie George>#27>Knowshon Moreno>C:Georgia>A.J. Green~0~J.J. Watt;Budda Baker;Geno Atkins~DeAndre Hopkins;J.J. Watt;Budda Baker
 Andre Reed>T:BUF>Von Miller>C:Texas A&M>Myles Garrett~Andre Reed>#83>Martellus Bennett>C:Texas A&M>Myles Garrett~0~Joe Thomas;Joel Bitonio;Jarvis Landry~Joe Thomas;Amari Cooper;Joel Bitonio
 Roddy White>T:ATL>Brett Favre>T:GB>Jared Cook~Roddy White>#84>Joe Horn>#87>Jared Cook~1~Drew Brees;Aaron Rodgers;Steve Hutchinson~Drew Brees;Aaron Rodgers;Steve Hutchinson
 A.J. Green>T:CIN>Anthony Munoz>C:USC>Amon-Ra St. Brown~A.J. Green>#18>Brandin Cooks>#14>Amon-Ra St. Brown~0~Jared Goff;Penei Sewell;Allen Robinson~Jared Goff;Penei Sewell;Zach Ertz
 Barry Sanders>T:DET>Adrian Peterson>#8>Troy Aikman~Barry Sanders>#20>DeShaun Foster>C:UCLA>Troy Aikman~0~Larry Allen;Deion Sanders;Emmitt Smith~Larry Allen;Deion Sanders;Emmitt Smith
-Torry Holt>#81>Terrell Owens>T:CIN>A.J. Green~Torry Holt>#81>Randy Moss>#18>A.J. Green~0~DeAndre Hopkins;J.J. Watt;Geno Atkins~DeAndre Hopkins;J.J. Watt;Geno Atkins
+Torry Holt>#81>Terrell Owens>T:CIN>A.J. Green~Torry Holt>#81>Randy Moss>#18>A.J. Green~0~DeAndre Hopkins;J.J. Watt;Budda Baker~DeAndre Hopkins;J.J. Watt;Budda Baker
 Patrick Willis>T:SF>Jerry Rice>T:SEA>Shaun Alexander~Patrick Willis>C:Mississippi>Kris Mangum>C:Alabama>Shaun Alexander~0~Walter Jones;Steve Hutchinson;Cortez Kennedy~Jerry Rice;Walter Jones;Steve Hutchinson
 Fred Warner>T:SF>Elvis Dumervil>#92>Michael Strahan~Fred Warner>C:BYU>Ryan Denney>#92>Michael Strahan~0~Lawrence Taylor;Eli Manning;Tiki Barber~Lawrence Taylor;Eli Manning;Tiki Barber
 Kevin Williams>#93>Dwight Freeney>T:ARI>Kyler Murray~Kevin Williams>#93>Gerald McCoy>C:Oklahoma>Kyler Murray~1~Larry Fitzgerald;DeAndre Hopkins;A.J. Green~Larry Fitzgerald;DeAndre Hopkins;A.J. Green
@@ -872,7 +900,7 @@ Michael Thomas>#13>Dan Marino>T:MIA>Mike Wallace~Michael Thomas>#13>Kerry Collin
 Warren Sapp>T:LV>Randy Moss>T:TEN>Chris Johnson~Warren Sapp>C:Miami>Devin Hester>#23>Chris Johnson~0~Larry Fitzgerald;Steve Hutchinson;Kevin Mawae~Larry Fitzgerald;Randy Moss;Steve Hutchinson
 Troy Aikman>#8>Morten Andersen>T:NYG>Philip Rivers~Troy Aikman>C:Oklahoma>Baker Mayfield>#17>Philip Rivers~0~Drew Brees;LaDainian Tomlinson;Dwight Freeney~Drew Brees;LaDainian Tomlinson;Dwight Freeney
 Brian Dawkins>T:DEN>Jerry Rice>#80>Jarvis Landry~Brian Dawkins>#20>Patrick Peterson>C:LSU>Jarvis Landry~0~Myles Garrett;Alvin Kamara;Joel Bitonio~Myles Garrett;Alvin Kamara;Joel Bitonio
-Eli Manning>T:NYG>Morten Andersen>T:KC>Jamaal Charles~Eli Manning>#10>Vince Young>C:Texas>Jamaal Charles~0~Tony Gonzalez;Travis Kelce;Von Miller~Tony Gonzalez;Travis Kelce;Von Miller
+Eli Manning>T:NYG>Morten Andersen>T:KC>Jamaal Charles~Eli Manning>#10>Vince Young>C:Texas>Jamaal Charles~0~Tony Gonzalez;Travis Kelce;Jalen Ramsey~Tony Gonzalez;Travis Kelce;Jalen Ramsey
 Jared Goff>C:California>Tony Gonzalez>#88>Marvin Harrison~Jared Goff>C:California>Tony Gonzalez>#88>Marvin Harrison~0~Peyton Manning;Edgerrin James;Richard Dent~Peyton Manning;Marshall Faulk;Dwight Freeney
 Jarvis Landry>C:LSU>Alan Faneca>T:ARI>James Conner~Jarvis Landry>#80>Julio Jones>#6>James Conner~1~Antonio Brown;DeAndre Hopkins;Ben Roethlisberger~Antonio Brown;DeAndre Hopkins;Ben Roethlisberger
 Julio Jones>T:ATL>Tony Gonzalez>#88>Torry Holt~Julio Jones>#80>Andre Johnson>#81>Torry Holt~0~Marshall Faulk;Aeneas Williams;Orlando Pace~Marshall Faulk;Aeneas Williams;Orlando Pace
@@ -930,7 +958,7 @@ Dez Bryant>#88>Tony Gonzalez>T:KC>LeSean McCoy~Dez Bryant>#88>Antonio Bryant>C:P
 Mike Vick>T:PIT>Alan Faneca>T:ARI>Aeneas Williams~Mike Vick>C:Virginia Tech>Raheem Blackshear>#35>Aeneas Williams~0~Marshall Faulk;Orlando Pace;Isaac Bruce~Marshall Faulk;Orlando Pace;Isaac Bruce
 Doug Martin>T:TB>Tom Brady>T:NE>Reggie Wayne~Doug Martin>#22>Ed Reed>C:Miami>Reggie Wayne~1~Peyton Manning;Marvin Harrison;Dwight Freeney~Peyton Manning;Marvin Harrison;Dwight Freeney
 Chris Johnson>#23>Christian McCaffrey>T:CAR>Luke Kuechly~Chris Johnson>#28>AJ Dillon>C:Boston>Luke Kuechly~0~Julius Peppers;Jared Allen;Steve Smith~Julius Peppers;Jared Allen;Steve Smith
-Peyton Manning>T:DEN>Jerry Rice>T:SF>Bryant Young~Peyton Manning>#18>Michael Floyd>C:Notre Dame>Bryant Young~0~Terrell Owens;Larry Allen;Rod Woodson~Jerry Rice;Terrell Owens;Larry Allen
+Peyton Manning>T:DEN>Jerry Rice>T:SF>Bryant Young~Peyton Manning>#18>Michael Floyd>C:Notre Dame>Bryant Young~0~Terrell Owens;Rod Woodson;Larry Allen~Jerry Rice;Terrell Owens;Rod Woodson
 Kyle Juszczyk>T:SF>Jerry Rice>T:LV>Davante Adams~Kyle Juszczyk>#44>Derrick Ward>C:Fresno State>Davante Adams~0~Aaron Rodgers;Julius Peppers;Matthew Stafford~Aaron Rodgers;Julius Peppers;Matthew Stafford
 Rod Woodson>T:BAL>Ray Lewis>C:Miami>Michael Irvin~Rod Woodson>#26>Clinton Portis>C:Miami>Michael Irvin~0~Emmitt Smith;Troy Aikman;Jimmy Smith~Larry Allen;Deion Sanders;Emmitt Smith
 Ty Law>T:DEN>Jerry Rice>T:LV>Roger Craig~Ty Law>#26>Leon Washington>#33>Roger Craig~0~Randall McDaniel;Tim Brown;Chris Doleman~Jerry Rice;Randall McDaniel;Ronnie Lott
@@ -967,7 +995,7 @@ Khalil Mack>T:CHI>Devin Hester>#17>Josh Allen~Khalil Mack>C:Buffalo>K.J. Osborn>
 Ty Law>T:KC>Tony Gonzalez>T:ATL>Matt Schaub~Ty Law>#26>Adrian Peterson>#8>Matt Schaub~1~Andre Johnson;Dwight Freeney;Julio Jones~Andre Johnson;Dwight Freeney;Julio Jones
 Kevin Greene>T:SF>Jerry Rice>#80>Julio Jones~Kevin Greene>C:Auburn>Jason Campbell>#2>Julio Jones~0~Tony Gonzalez;Tom Brady;Dwight Freeney~Tony Gonzalez;Tom Brady;Dwight Freeney
 Carson Palmer>T:LV>Jerry Rice>#80>Jimmy Graham~Carson Palmer>C:USC>Johnnie Morton>#80>Jimmy Graham~0~Aaron Rodgers;Devin Hester;Bobby Wagner~Aaron Rodgers;Dwight Freeney;Devin Hester
-Von Miller>#24>Charles Woodson>T:GB>Aaron Rodgers~Von Miller>#24>Marshawn Lynch>C:California>Aaron Rodgers~0~Brett Favre;Julius Peppers;Jahri Evans~Brett Favre;Julius Peppers;Davante Adams
+Von Miller>#24>Charles Woodson>T:GB>Aaron Rodgers~Von Miller>#24>Marshawn Lynch>C:California>Aaron Rodgers~0~Brett Favre;Julius Peppers;T.J. Watt~Brett Favre;Julius Peppers;Davante Adams
 Derrick Henry>T:BAL>Deion Sanders>T:DAL>Andy Dalton~Derrick Henry>#22>Mark Ingram>#14>Andy Dalton~0~Zack Martin;A.J. Green;Khalil Mack~Zack Martin;A.J. Green;Khalil Mack
 Tiki Barber>#21>LaDainian Tomlinson>T:NYJ>Aaron Rodgers~Tiki Barber>#21>Adrian Peterson>#8>Aaron Rodgers~0~Brett Favre;Julius Peppers;Davante Adams~Brett Favre;Julius Peppers;Davante Adams
 Joe Mixon>T:CIN>Terrell Owens>T:DAL>Michael Irvin~Joe Mixon>C:Oklahoma>CeeDee Lamb>#88>Michael Irvin~1~Larry Allen;Deion Sanders;Emmitt Smith~Larry Allen;Deion Sanders;Emmitt Smith
@@ -1020,19 +1048,19 @@ Marcus Allen>T:LV>Jerry Rice>T:SEA>Matt Hasselbeck~Marcus Allen>C:USC>Matt Casse
 Jalen Ramsey>T:MIA>Junior Seau>T:LAC>Justin Herbert~Jalen Ramsey>#5>Todd Sauerbrun>#10>Justin Herbert~1~Keenan Allen;Khalil Mack;Ezekiel Elliott~Keenan Allen;Khalil Mack;Ezekiel Elliott
 Demaryius Thomas>T:DEN>Jerry Rice>#80>Kyle Rudolph~Demaryius Thomas>#88>Isaac Bruce>#80>Kyle Rudolph~1~Steve Hutchinson;Jared Allen;Adrian Peterson~Tom Brady;Steve Hutchinson;Jared Allen
 Fred Warner>#54>Dwight Freeney>T:IND>Andrew Luck~Fred Warner>C:BYU>Puka Nacua>#12>Andrew Luck~1~Andre Johnson;Reggie Wayne;Quenton Nelson~Andre Johnson;Reggie Wayne;Quenton Nelson
-Randy Moss>T:LV>Rod Woodson>#26>Deuce McAllister~Randy Moss>C:Florida State>Leon Washington>#26>Deuce McAllister~1~Drew Brees;Willie Roaf;Jahri Evans~Drew Brees;Willie Roaf;Jahri Evans`.split('\n'),TV=`Troy Polamalu|SS|2003–2014|Pac-12|cardinal:#990000,yellow:#ffcc00
+Randy Moss>T:LV>Rod Woodson>#26>Deuce McAllister~Randy Moss>C:Florida State>Leon Washington>#26>Deuce McAllister~1~Drew Brees;Willie Roaf;Jahri Evans~Drew Brees;Willie Roaf;Jahri Evans`.split('\n'),TV=`Troy Polamalu|SS|2003–2014|SEC|cardinal:#990000,yellow:#ffcc00
 Myles Garrett|DL|2017–2025|SEC|maroon:#500000,white:#ffffff
 Donovan McNabb|QB|1999–2011|ACC|orange:#f76900,navy blue:#000e54
 Jason Taylor|DE|1997–2011|Mid-American (MAC)|navy blue:#041e42,old gold:#a89968
 Jared Allen|DE|2004–2015|Big Sky|orange:#ef8c00,gold:#e9a126
 Drew Brees|QB|2001–2021|Big Ten|tan:#ceb888,black:#000000
 Eli Manning|QB|2004–2019|SEC|navy blue:#13294b,red:#cf142b
-Cameron Heyward|DL|2011–2025|Big Ten|crimson:#ba0c2f,silver:#a7b1b7
+Cameron Heyward|DL|2011–2025|SEC|crimson:#ba0c2f,silver:#a7b1b7
 LeRoy Butler|DB|1990–2001|ACC|maroon:#782f40,tan:#ceb888
-Lawrence Taylor|LB|1981–1993|ACC|light blue:#7bafd4,navy blue:#13294b
+Lawrence Taylor|LB|1981–1993|SEC|light blue:#7bafd4,navy blue:#13294b
 Michael Strahan|DE|1993–2007|SWAC|crimson:#860038,white:#ffffff
-Julius Peppers|DE|2002–2018|ACC|light blue:#7bafd4,navy blue:#13294b
-Darrelle Revis|CB|2007–2017|ACC|royal blue:#003594,yellow:#ffb81c
+Julius Peppers|DE|2002–2018|SEC|light blue:#7bafd4,navy blue:#13294b
+Darrelle Revis|CB|2007–2017|Pac-12|royal blue:#003594,yellow:#ffb81c
 Luke Kuechly|LB|2012–2020|ACC|crimson:#8c2232,tan:#dbcca6
 Richard Dent|DL|1983–1997|Ohio Valley|royal blue:#171796,white:#f0f0f0
 Richard Seymour|DE|2001–2012|SEC|crimson:#ba0c2f,black:#2c2a29
@@ -1042,70 +1070,70 @@ Cam Newton|QB|2011–2021|SEC|navy blue:#0c2340,orange:#f26522
 Rob Gronkowski|TE|2010–2021|Pac-12|red:#cc0033,navy blue:#003366
 Jim Kelly|QB|1986–1996|ACC|orange:#f47321,dark green:#005030
 Matt Ryan|QB|2008–2024|ACC|crimson:#8c2232,tan:#dbcca6
-Derek Carr|QB|2014–2025|Mountain West|crimson:#c41230,navy blue:#13284c
+Derek Carr|QB|2014–2025|Big 12|crimson:#c41230,navy blue:#13284c
 Marshall Faulk|RB|1994–2005|Mountain West|crimson:#a6192e,black:#000000
-Marshawn Lynch|RB|2007–2020|Pac-12|navy blue:#041e42,yellow:#ffc72c
-Dez Bryant|WR|2010–2020|Big 12|orange:#fe5c00,black:#000000
-Calvin Johnson|WR|2007–2015|ACC|old gold:#b3a369,white:#ffffff
-Amon-Ra St. Brown|WR|2021–2025|Pac-12|cardinal:#990000,yellow:#ffcc00
+Marshawn Lynch|RB|2007–2020|SEC|navy blue:#041e42,yellow:#ffc72c
+Dez Bryant|WR|2010–2020|Big Ten|orange:#fe5c00,black:#000000
+Calvin Johnson|WR|2007–2015|SEC|old gold:#b3a369,white:#ffffff
+Amon-Ra St. Brown|WR|2021–2025|SEC|cardinal:#990000,yellow:#ffcc00
 Terrell Owens|WR|1996–2010|Southern|navy blue:#00386b,gold:#dca71d
 Ed Reed|FS|2002–2013|ACC|orange:#f47321,dark green:#005030
 Ray Lewis|ILB|1996–2012|ACC|orange:#f47321,dark green:#005030
-Jimmy Smith|WR|1992–2005|Big 12|royal blue:#123297,silver:#b5b7ba
+Jimmy Smith|WR|1992–2005|SWAC|royal blue:#123297,silver:#b5b7ba
 Jason Witten|TE|2003–2020|SEC|orange:#ff8200,white:#ffffff
-Steven Jackson|RB|2004–2015|Pac-12|burnt orange:#dc4405,black:#000000
-Barry Sanders|RB|1989–1998|Big 12|orange:#fe5c00,black:#000000
+Steven Jackson|RB|2004–2015|SEC|burnt orange:#dc4405,black:#000000
+Barry Sanders|RB|1989–1998|Big Ten|orange:#fe5c00,black:#000000
 Jarvis Landry|WR|2014–2022|SEC|purple:#461d7c,yellow:#fdd023
-Alex Smith|QB|2005–2020|Pac-12|red:#be0000,white:#ffffff
+Alex Smith|QB|2005–2020|Mountain West|red:#be0000,white:#ffffff
 Michael Irvin|WR|1988–1999|ACC|orange:#f47321,dark green:#005030
 Anquan Boldin|WR|2003–2017|ACC|maroon:#782f40,tan:#ceb888
-Adrian Peterson|RB|2007–2021|Big 12|cardinal:#841617,white:#ffffff
+Adrian Peterson|RB|2007–2021|SEC|cardinal:#841617,white:#ffffff
 Tyreek Hill|WR|2016–2025|Big 12|orange:#fe5c00,black:#000000
-Junior Seau|ILB|1990–2009|Pac-12|cardinal:#990000,yellow:#ffcc00
-Tiki Barber|RB|1997–2006|ACC|navy blue:#232d4b,orange:#f84c1e
-Chris Doleman|DL|1985–1999|ACC|royal blue:#003594,yellow:#ffb81c
+Junior Seau|ILB|1990–2009|SEC|cardinal:#990000,yellow:#ffcc00
+Tiki Barber|RB|1997–2006|Big 12|navy blue:#232d4b,orange:#f84c1e
+Chris Doleman|DL|1985–1999|Pac-12|royal blue:#003594,yellow:#ffb81c
 Devin Hester|WR|2006–2016|ACC|orange:#f47321,dark green:#005030
 Dwight Freeney|DE|2002–2017|ACC|orange:#f76900,navy blue:#000e54
-Ben Roethlisberger|QB|2004–2021|Mid-American (MAC)|crimson:#c41230,white:#ffffff
-Cameron Jordan|DL|2011–2025|Pac-12|navy blue:#041e42,yellow:#ffc72c
+Ben Roethlisberger|QB|2004–2021|SEC|crimson:#c41230,white:#ffffff
+Cameron Jordan|DL|2011–2025|SEC|navy blue:#041e42,yellow:#ffc72c
 Patrick Willis|ILB|2007–2014|SEC|navy blue:#13294b,red:#cf142b
 Andy Dalton|QB|2011–2025|Big 12|purple:#4d1979,white:#ffffff
-Jamaal Charles|RB|2008–2018|Big 12|burnt orange:#bf5700,white:#ffffff
-Ronnie Lott|DB|1981–1995|Pac-12|cardinal:#990000,yellow:#ffcc00
+Jamaal Charles|RB|2008–2018|SEC|burnt orange:#bf5700,white:#ffffff
+Ronnie Lott|DB|1981–1995|SEC|cardinal:#990000,yellow:#ffcc00
 George Kittle|TE|2017–2025|Big Ten|black:#000000,yellow:#ffcd00
-Ezekiel Elliott|RB|2016–2024|Big Ten|crimson:#ba0c2f,silver:#a7b1b7
-Le'Veon Bell|RB|2013–2021|Big Ten|dark green:#173f35,white:#ffffff
-Patrick Mahomes|QB|2017–2025|Big 12|red:#c30020,black:#000000
+Ezekiel Elliott|RB|2016–2024|SEC|crimson:#ba0c2f,silver:#a7b1b7
+Le'Veon Bell|RB|2013–2021|SEC|dark green:#173f35,white:#ffffff
+Patrick Mahomes|QB|2017–2025|Pac-12|red:#c30020,black:#000000
 Jimmy Graham|TE|2010–2023|ACC|orange:#f47321,dark green:#005030
-Saquon Barkley|RB|2018–2025|Big Ten|navy blue:#001e44,white:#ffffff
+Saquon Barkley|RB|2018–2025|SEC|navy blue:#001e44,white:#ffffff
 Mike Evans|WR|2014–2025|SEC|maroon:#500000,white:#ffffff
 Shaun Alexander|RB|2000–2008|SEC|crimson:#9e1b32,white:#ffffff
 Todd Gurley|RB|2015–2020|SEC|crimson:#ba0c2f,black:#2c2a29
 Ty Law|CB|1995–2009|Big Ten|navy blue:#00274c,yellow:#ffcb05
-Troy Aikman|QB|1989–2000|Big 12|cardinal:#841617,white:#ffffff
-Jared Goff|QB|2016–2025|Pac-12|navy blue:#041e42,yellow:#ffc72c
-CeeDee Lamb|WR|2020–2025|Big 12|cardinal:#841617,white:#ffffff
+Troy Aikman|QB|1989–2000|SEC|cardinal:#841617,white:#ffffff
+Jared Goff|QB|2016–2025|SEC|navy blue:#041e42,yellow:#ffc72c
+CeeDee Lamb|WR|2020–2025|SEC|cardinal:#841617,white:#ffffff
 Patrick Peterson|DB|2011–2023|SEC|purple:#461d7c,yellow:#fdd023
 Tom Brady|QB|2000–2022|Big Ten|navy blue:#00274c,yellow:#ffcb05
 Randy Moss|WR|1998–2012|ACC|maroon:#782f40,tan:#ceb888
-Travis Kelce|TE|2013–2025|American Athletic (AAC)|black:#000000,red:#e00122
-Marcus Allen|RB|1982–1997|Pac-12|cardinal:#990000,yellow:#ffcc00
+Travis Kelce|TE|2013–2025|Big 12|black:#000000,red:#e00122
+Marcus Allen|RB|1982–1997|SEC|cardinal:#990000,yellow:#ffcc00
 Ja'Marr Chase|WR|2021–2025|SEC|purple:#461d7c,yellow:#fdd023
 Lamar Jackson|QB|2018–2025|ACC|red:#c9001f,black:#000000
-Tony Gonzalez|TE|1997–2013|Pac-12|navy blue:#041e42,yellow:#ffc72c
-Zach Thomas|MLB|1996–2008|Big 12|red:#c30020,black:#000000
-Chad Ochocinco|WR|2001–2011|Pac-12|burnt orange:#dc4405,black:#000000
-Fred Warner|LB|2018–2025|Independent|royal blue:#003da5,navy blue:#002e5d
+Tony Gonzalez|TE|1997–2013|SEC|navy blue:#041e42,yellow:#ffc72c
+Zach Thomas|MLB|1996–2008|Pac-12|red:#c30020,black:#000000
+Chad Ochocinco|WR|2001–2011|SEC|burnt orange:#dc4405,black:#000000
+Fred Warner|LB|2018–2025|Big 12|royal blue:#003da5,navy blue:#002e5d
 Steve Atwater|DB|1989–1999|SEC|crimson:#a32136,white:#ffffff
 Hines Ward|WR|1998–2011|SEC|crimson:#ba0c2f,black:#2c2a29
 Stefon Diggs|WR|2015–2025|Big Ten|red:#ce1126,white:#ffffff
 T.J. Watt|LB|2017–2025|Big Ten|cardinal:#a00000,white:#ffffff
-Dan Marino|QB|1983–1999|ACC|royal blue:#003594,yellow:#ffb81c
+Dan Marino|QB|1983–1999|Pac-12|royal blue:#003594,yellow:#ffb81c
 Derrick Thomas|LB|1989–1999|SEC|crimson:#9e1b32,white:#ffffff
 Matthew Stafford|QB|2009–2025|SEC|crimson:#ba0c2f,black:#2c2a29
 Reggie Wayne|WR|2001–2014|ACC|orange:#f47321,dark green:#005030
 Jeremy Shockey|TE|2002–2011|ACC|orange:#f47321,dark green:#005030
-Earl Thomas|FS|2010–2020|Big 12|burnt orange:#bf5700,white:#ffffff
+Earl Thomas|FS|2010–2020|SEC|burnt orange:#bf5700,white:#ffffff
 Chris Johnson|RB|2008–2017|American Athletic (AAC)|purple:#592a8a,yellow:#fdc82f
 Josh Allen|QB|2018–2025|Mountain West|brown:#492f24,yellow:#ffc425
 Darrell Green|DB|1983–2002|Lone Star|black:#000000
@@ -1113,83 +1141,83 @@ Justin Jefferson|WR|2020–2025|SEC|purple:#461d7c,yellow:#fdd023
 Bryant Young|DT|1994–2007|Independent|navy blue:#0c2340,gold:#c99700
 Roddy White|WR|2005–2015|Conference USA|dark green:#1a5632,yellow:#fdb913
 Warren Sapp|DT|1995–2007|ACC|orange:#f47321,dark green:#005030
-Torry Holt|WR|1999–2009|ACC|red:#cc0000,white:#ffffff
-Joe Horn|WR|1996–2007|SEC|
-Keenan Allen|WR|2013–2025|Pac-12|navy blue:#041e42,yellow:#ffc72c
-Carson Palmer|QB|2003–2017|Pac-12|cardinal:#990000,yellow:#ffcc00
+Torry Holt|WR|1999–2009|SEC|red:#cc0000,white:#ffffff
+Joe Horn|WR|1996–2007|Sun Belt|
+Keenan Allen|WR|2013–2025|SEC|navy blue:#041e42,yellow:#ffc72c
+Carson Palmer|QB|2003–2017|SEC|cardinal:#990000,yellow:#ffcc00
 Khalil Mack|LB|2014–2025|Mid-American (MAC)|royal blue:#005bbb,white:#ffffff
 Shannon Sharpe|TE|1990–2003|SIAC|purple:#280298,orange:#f78f1e
 LaDainian Tomlinson|RB|2001–2011|Big 12|purple:#4d1979,white:#ffffff
-Philip Rivers|QB|2004–2025|ACC|red:#cc0000,white:#ffffff
+Philip Rivers|QB|2004–2025|SEC|red:#cc0000,white:#ffffff
 Terrell Davis|RB|1995–2001|SEC|crimson:#ba0c2f,black:#2c2a29
 Brett Favre|QB|1991–2010|Conference USA|yellow:#ffc72c,black:#231f20
 Charles Woodson|CB|1998–2015|Big Ten|navy blue:#00274c,yellow:#ffcb05
 Andre Reed|WR|1985–2000|Pennsylvania State Athletic|black:#000000
 Peyton Manning|QB|1998–2015|SEC|orange:#ff8200,white:#ffffff
-John Lynch|FS|1993–2007|Pac-12|cardinal:#8c1515,white:#ffffff
+John Lynch|FS|1993–2007|Big 12|cardinal:#8c1515,white:#ffffff
 Aaron Rodgers|QB|2005–2025|Pac-12|navy blue:#041e42,yellow:#ffc72c
 Cortez Kennedy|DL|1990–2000|ACC|orange:#f47321,dark green:#005030
 Champ Bailey|CB|1999–2013|SEC|crimson:#ba0c2f,black:#2c2a29
 Jalen Ramsey|DB|2016–2025|ACC|maroon:#782f40,tan:#ceb888
 Derrick Henry|RB|2016–2025|SEC|crimson:#9e1b32,white:#ffffff
 Kevin Greene|LB|1985–1999|SEC|navy blue:#0c2340,orange:#f26522
-Michael Thomas|WR|2016–2023|Big Ten|crimson:#ba0c2f,silver:#a7b1b7
-Kirk Cousins|QB|2012–2025|Big Ten|dark green:#173f35,white:#ffffff
+Michael Thomas|WR|2016–2023|SEC|crimson:#ba0c2f,silver:#a7b1b7
+Kirk Cousins|QB|2012–2025|SEC|dark green:#173f35,white:#ffffff
 Tim Brown|WR|1988–2004|Independent|navy blue:#0c2340,gold:#c99700
-Bruce Smith|DE|1985–2003|ACC|crimson:#861f41,orange:#e87722
+Bruce Smith|DE|1985–2003|Big 12|crimson:#861f41,orange:#e87722
 Donald Driver|WR|1999–2012|SWAC|maroon:#4b0058,purple:#46166a
-Isaac Bruce|WR|1994–2009|American Athletic (AAC)|royal blue:#00498f,gray:#9c9ea1
+Isaac Bruce|WR|1994–2009|SEC|royal blue:#00498f,gray:#9c9ea1
 Budda Baker|DB|2017–2025|Pac-12|purple:#33006f,cream:#e8d3a2
-Curtis Martin|RB|1995–2005|ACC|royal blue:#003594,yellow:#ffb81c
-Davante Adams|WR|2014–2025|Mountain West|crimson:#c41230,navy blue:#13284c
-LeSean McCoy|RB|2009–2020|ACC|royal blue:#003594,yellow:#ffb81c
+Curtis Martin|RB|1995–2005|Pac-12|royal blue:#003594,yellow:#ffb81c
+Davante Adams|WR|2014–2025|Big 12|crimson:#c41230,navy blue:#13284c
+LeSean McCoy|RB|2009–2020|Pac-12|royal blue:#003594,yellow:#ffb81c
 Steve Smith|WR|2001–2016|Sun Belt|red:#be0000,white:#ffffff
 J.J. Watt|DL|2011–2022|Mid-American (MAC)|maroon:#6a0032,yellow:#ffc82e
-John Elway|QB|1983–1998|Pac-12|cardinal:#8c1515,white:#ffffff
+John Elway|QB|1983–1998|Big 12|cardinal:#8c1515,white:#ffffff
 Deion Sanders|CB|1989–2005|ACC|maroon:#782f40,tan:#ceb888
-Roger Craig|RB|1983–1993|Big Ten|red:#d00000,white:#ffffff
-Kevin Williams|DT|2003–2016|Big 12|orange:#fe5c00,black:#000000
+Roger Craig|RB|1983–1993|Big 12|red:#d00000,white:#ffffff
+Kevin Williams|DT|2003–2016|Big Ten|orange:#fe5c00,black:#000000
 Geno Atkins|DT|2010–2020|SEC|crimson:#ba0c2f,black:#2c2a29
-Ronde Barber|CB|1997–2012|ACC|navy blue:#232d4b,orange:#f84c1e
-Russell Wilson|QB|2012–2025|ACC|red:#cc0000,white:#ffffff
-Demaryius Thomas|WR|2010–2020|ACC|old gold:#b3a369,white:#ffffff
+Ronde Barber|CB|1997–2012|Big 12|navy blue:#232d4b,orange:#f84c1e
+Russell Wilson|QB|2012–2025|SEC|red:#cc0000,white:#ffffff
+Demaryius Thomas|WR|2010–2020|SEC|old gold:#b3a369,white:#ffffff
 Rod Woodson|FS|1987–2003|Big Ten|tan:#ceb888,black:#000000
-T.Y. Hilton|WR|2012–2022|Conference USA|navy blue:#091f3f,vegas gold:#c3993f
-Christian McCaffrey|RB|2017–2025|Pac-12|cardinal:#8c1515,white:#ffffff
-Brian Dawkins|FS|1996–2011|ACC|orange:#f56600,purple:#522d80
-Ahman Green|RB|1998–2009|Big Ten|red:#d00000,white:#ffffff
-Brandon Marshall|WR|2006–2018|American Athletic (AAC)|black:#000000,old gold:#b4a169
+T.Y. Hilton|WR|2012–2022|SEC|navy blue:#091f3f,vegas gold:#c3993f
+Christian McCaffrey|RB|2017–2025|Big 12|cardinal:#8c1515,white:#ffffff
+Brian Dawkins|FS|1996–2011|SEC|orange:#f56600,purple:#522d80
+Ahman Green|RB|1998–2009|Big 12|red:#d00000,white:#ffffff
+Brandon Marshall|WR|2006–2018|ACC|black:#000000,old gold:#b4a169
 Chris Jones|DL|2016–2025|SEC|maroon:#5d1725,silver:#c1c6c8
-Kyle Juszczyk|RB|2013–2025|Ivy League|cardinal:#990000,cream:#dbdbdb
+Kyle Juszczyk|RB|2013–2025|ACC|cardinal:#990000,cream:#dbdbdb
 Marvin Harrison|WR|1996–2008|ACC|orange:#f76900,navy blue:#000e54
 DeMarcus Ware|OLB|2005–2016|Sun Belt|crimson:#862633,silver:#b1b1b1
 Cordarrelle Patterson|WR|2013–2024|Big Ten|orange:#ff8200,white:#ffffff
-Charles Haley|DL|1986–1999|CAA|purple:#450084,tan:#cbb677
+Charles Haley|DL|1986–1999|SEC|purple:#450084,tan:#cbb677
 Antonio Brown|WR|2010–2021|Mid-American (MAC)|maroon:#6a0032,yellow:#ffc82e
 Aeneas Williams|FS|1991–2004|SWAC|royal blue:#004b97,yellow:#ffc82d
 Jerome Bettis|RB|1993–2005|Independent|navy blue:#0c2340,gold:#c99700
 Amari Cooper|WR|2015–2025|SEC|crimson:#9e1b32,white:#ffffff
-Eddie George|RB|1996–2004|Big Ten|crimson:#ba0c2f,silver:#a7b1b7
-Larry Fitzgerald|WR|2004–2020|ACC|royal blue:#003594,yellow:#ffb81c
+Eddie George|RB|1996–2004|SEC|crimson:#ba0c2f,silver:#a7b1b7
+Larry Fitzgerald|WR|2004–2020|Pac-12|royal blue:#003594,yellow:#ffb81c
 Emmitt Smith|RB|1990–2004|SEC|royal blue:#0021a5,orange:#fa4616
 Von Miller|LB|2011–2025|SEC|maroon:#500000,white:#ffffff
 Alvin Kamara|RB|2017–2025|SEC|crimson:#9e1b32,white:#ffffff
 Dak Prescott|QB|2016–2025|SEC|maroon:#5d1725,silver:#c1c6c8
-Mike Vick|QB|2001–2016|ACC|crimson:#861f41,orange:#e87722
-Derrick Mason|WR|1997–2011|Big Ten|dark green:#173f35,white:#ffffff
+Mike Vick|QB|2001–2016|Big 12|crimson:#861f41,orange:#e87722
+Derrick Mason|WR|1997–2011|SEC|dark green:#173f35,white:#ffffff
 A.J. Green|WR|2011–2022|SEC|crimson:#ba0c2f,black:#2c2a29
 Derrick Brooks|OLB|1995–2008|ACC|maroon:#782f40,tan:#ceb888
-DeAndre Hopkins|WR|2013–2025|ACC|orange:#f56600,purple:#522d80
+DeAndre Hopkins|WR|2013–2025|SEC|orange:#f56600,purple:#522d80
 Andre Johnson|WR|2003–2016|ACC|orange:#f47321,dark green:#005030
-Aaron Donald|DL|2014–2024|ACC|royal blue:#003594,yellow:#ffb81c
+Aaron Donald|DL|2014–2024|Pac-12|royal blue:#003594,yellow:#ffb81c
 Frank Gore|RB|2005–2022|ACC|orange:#f47321,dark green:#005030
 Maurice Jones-Drew|RB|2006–2014|Pac-12|teal:#2774ae,yellow:#f2a900
-Brian Urlacher|MLB|2000–2012|Mountain West|crimson:#ba0c2f,silver:#a7a8aa
+Brian Urlacher|MLB|2000–2012|SEC|crimson:#ba0c2f,silver:#a7a8aa
 Julio Jones|WR|2011–2023|SEC|crimson:#9e1b32,white:#ffffff
 Rich Gannon|QB|1987–2004|CAA|royal blue:#00539f,yellow:#ffd200
-Thurman Thomas|RB|1988–2000|Big 12|orange:#fe5c00,black:#000000
-Bobby Wagner|LB|2012–2025|Mountain West|navy blue:#0f2439,white:#ffffff
-Eric Allen|DB|1988–2001|Pac-12|yellow:#ffc627,crimson:#8c1d40`.split('\n'),P={};
+Thurman Thomas|RB|1988–2000|Big Ten|orange:#fe5c00,black:#000000
+Bobby Wagner|LB|2012–2025|Big 12|navy blue:#0f2439,white:#ffffff
+Eric Allen|DB|1988–2001|Big 12|yellow:#ffc627,crimson:#8c1d40`.split('\n'),P={};
 for(const l of `George Blanda|BAL1952:1 CHI:10 LV:9 TEN:7|16|412|16|QB|1949|1975|26|0|1|0
 Adam Vinatieri|IND:15 NE:10|4|786|4|K|1996|2020|25|0|1|0
 Morten Andersen|ATL:8 KC:2 MIN:1 NO:13 NYG:1|5 7 8|511|5|K|1982|2007|25|63|1|0
@@ -33916,7 +33944,7 @@ $('#ctl').innerHTML=o?`<div class="end"><h2>${w?'Touchdown':'Turnover on downs'}
 :`${mt}<p class="ask">${ex?`Name a team, number or college of <b>${C.at(-1)}</b>`:askFor(C.at(-1))}</p><form id="f"><div class="acw"><input id="i" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="${ex?'Team, #, or college':'Player name'}"></div><button class="btn">${ex?'Lateral':'Catch'}</button></form><div class="tbtns" style="margin-top:8px">${C.length>1?'<button class="tbtn" id="undo">Undo</button>':''}${!U&&!tm&&TM.length?'<button class="tbtn" id="tmb">Hint: 3 teammates of the target (+30s)</button>':''}${U?'<button class="tbtn" id="give">Show a path</button>':''}</div>`;
 const on=on2;
 on('next',()=>{load();hike()});on('repEnd',()=>openReport(''));on('tmb',()=>{tm=1;persist();draw()});on('share',share);if(o)rankLoad();on('undo',()=>{C.pop();msg='';persist();draw()});on('give',()=>{gave=1;draw()});
-const f=$('#f');if(f){f.onsubmit=e=>{e.preventDefault();go($('#i').value)};$('#i').oninput=ac;attachAC($('#i'),ex?'c':'p',submitWith('#f'));$('#i').focus({preventScroll:true});globalThis.scrollTo?.({top:document.body.scrollHeight,behavior:'smooth'})}}
+const f=$('#f');if(f){f.onsubmit=e=>{e.preventDefault();go($('#i').value)};$('#i').oninput=ac;attachAC($('#i'),ex?'c':'p',submitWith('#f'));$('#i').focus({preventScroll:true});(c=>{if(c)c.scrollTop=c.scrollHeight})($('#chain'));globalThis.scrollTo?.({top:document.body.scrollHeight,behavior:'smooth'})}}
 function on2(id,f){const e=$('#'+id);if(e)e.onclick=f}
 function ac(){const el=$('#i'),v=el.value.toLowerCase(),L=C.length%2?CL:NM,k=C.length%2&&conn(el.value);
 if(k&&k[0]=='T'){const[t,a]=tcol(k.slice(2));Object.assign(el.style,{color:t,background:'#f2f3f5',borderColor:a})}else el.removeAttribute('style');}
@@ -34069,7 +34097,7 @@ function bkDraw(){const ch=BK.ch,pl=BK.ph=='play',n=bkCount(),st=(l,v,id='')=>`<
   on2('bkAgain',bkStart);on2('bkShare',()=>sendOut(t,m=>{BK.msg=m;bkDraw()}));return}
  const ex=ch.length%2;$('#bkCtl').innerHTML=`<p class="ask">${ex?askFor(cur):`Name another team, number or college of <b>${cur}</b>`}</p><form id="bkf"><div class="acw"><input id="bki" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="${ex?'Player name':'Team, #, or college'}"></div><button class="btn">${ex?'Catch':'Lateral'}</button></form><div class="tbtns" style="margin-top:8px"><button class="tbtn" id="bkStop">End run</button></div>`;
  on2('bkStop',()=>bkEnd('You ended the run.'));const f=$('#bkf');f.onsubmit=e=>{e.preventDefault();bkGo($('#bki').value)};
- $('#bki').oninput=()=>{const el=$('#bki'),k=!ex&&conn(el.value);if(k&&k[0]=='T'){const[t,a]=tcol(k.slice(2));Object.assign(el.style,{color:t,background:'#f2f3f5',borderColor:a})}else el.removeAttribute('style')};attachAC($('#bki'),ex?'p':'c',submitWith('#bkf'));$('#bki').focus({preventScroll:true});globalThis.scrollTo?.({top:document.body.scrollHeight,behavior:'smooth'})}
+ $('#bki').oninput=()=>{const el=$('#bki'),k=!ex&&conn(el.value);if(k&&k[0]=='T'){const[t,a]=tcol(k.slice(2));Object.assign(el.style,{color:t,background:'#f2f3f5',borderColor:a})}else el.removeAttribute('style')};attachAC($('#bki'),ex?'p':'c',submitWith('#bkf'));$('#bki').focus({preventScroll:true});(c=>{if(c)c.scrollTop=c.scrollHeight})($('#bkChain'));globalThis.scrollTo?.({top:document.body.scrollHeight,behavior:'smooth'})}
 $('#tB').onclick=()=>tab(2);
 $('#repTop').onclick=()=>openReport('');$('#repMiss').onclick=()=>openReport(`The game said: "${lastClaim}" I think that's wrong because `);$('#repBK').onclick=()=>openReport(`The game said: "${BK.claim}" I think that's wrong because `);
 $('#rclose').onclick=closeReport;$('#rform').onsubmit=sendReport;$('#rbox').onclick=e=>{if(e.target.id=='rbox')closeReport()};document.addEventListener?.('keydown',e=>{if(e.key=='Escape')closeReport()});
@@ -34081,22 +34109,30 @@ function homeHTML(){const ex=[['The quick way',['Tom Brady','T:TB','Ronde Barber
  ['The stylish way',['Tom Brady','T:NE','James Harrison','T:BAL','Ed Reed'],'James Harrison finished his career with the Patriots in 2017, and he was briefly a Raven back in 2004. Harder to think of, so it earns Solid and Obscure.']];
  A='Tom Brady';B='Ed Reed';H=0;RU=[];
  const card=([t,ch,txt])=>`<div class="ex"><h3><span>${t}</span></h3><div class="exr">${route(ch)}</div><p>${txt}</p><div class="score">${ch.map((k,i)=>i%2?(([tt,why])=>`<div><span>${tbadge(tt)} ${lab(k)} → ${ch[i+1]}</span></div>`)(htier(ch,i)):'').join('')}</div></div>`;
- return`<p class="lede">Connect two NFL players through the teams, jersey numbers and colleges they share. Every link is a lateral. Fastest time wins.</p>
+ return`<div class="hl"><p class="lede">Connect two NFL players through the teams, jersey numbers and colleges they share. Every link is a lateral. Fastest time wins.</p>
 <div class="board"><small class="bl">Example</small><div class="vs"><div><small>Start</small><b>Tom Brady</b></div><i>→</i><div><small>Target</small><b>Ed Reed</b></div></div></div>
 <button class="hike bigplay" id="goPlay">Play</button>
-<div class="modecards"><button class="mc" id="goPlay2"><b>Lateral</b><span>Daily puzzle: link two players</span></button><button class="mc" id="goTrivia"><b>Trivia</b><span>Name his number, team and college</span></button><button class="mc" id="goBK"><b>Ball Knowledge</b><span>Endless chain on a 30-second clock</span></button></div>
-<details class="acc"><summary>How a drive works</summary><div class="accb">
+<div class="modecards"><button class="mc" id="goPlay2"><b>Lateral</b><span>Daily puzzle: link two players</span></button><button class="mc" id="goTrivia"><b>Trivia</b><span>Name his number, team and college</span></button><button class="mc" id="goBK"><b>Ball Knowledge</b><span>Endless chain on a 30-second clock</span></button></div></div>
+<div class="hr"><details class="acc"><summary>How a drive works</summary><div class="accb">
 <ol class="steps"><li><span>Name a <b>team</b>, a <b>jersey number</b> or a <b>college</b> the player had. Brady: the Buccaneers, #12, or Michigan.</span></li><li><span>Name <b>any other player</b> who shares it. Any Buccaneer ever, anyone who wore #12, anyone from Michigan.</span></li><li><span>Keep going until you reach the target. Each team, number and college can be used once.</span></li></ol>
 ${ex.map(card).join('')}</div></details>
-<details class="acc"><summary>How you're ranked</summary><div class="accb"><p>The clock starts when the countdown ends and stops at the touchdown. Wrong guesses don't add time, but Daily gives you only 3 timeouts. The teammates hint adds 30 seconds.</p><p>Each lateral also earns a style badge for how deep a cut it was. In shared results, each square is one lateral: 🟩 Gimme · 🟦 Solid · 🟨 Niche · 🟧 Obscure · 🟥 Legendary. ❌ marks a timeout used.</p></div></details>
-<p class="foot">Fan-made. Not affiliated with the NFL. Data: nflverse, College Football Data.</p>`}
+<details class="acc"><summary>How you're ranked</summary><div class="accb"><p>The clock starts when the countdown ends and stops at the touchdown. Wrong guesses don't add time, but Daily gives you only 3 timeouts. The teammates hint adds 30 seconds.</p><p>Each lateral also earns a style badge for how deep a cut it was. In shared results, each square is one lateral: 🟩 Gimme · 🟦 Solid · 🟨 Niche · 🟧 Obscure · 🟥 Legendary. ❌ marks a timeout used.</p></div></details></div>
+<p class="foot">Fan-made. Not affiliated with the NFL. Data: nflverse, College Football Data. · <button class="tbtn" id="repHome">Report a mistake</button></p>`}
 const homeHtml=homeHTML();
-function home(on){$('#home').hidden=!on;$('#app').hidden=on;document.body?.classList?.toggle('ingame',!on);$('#topcta').hidden=!on;if(on){$('#home').innerHTML=homeHtml;$('#date').textContent='The NFL connection game';fitN();on2('goPlay',()=>{home(0);tab(0)});on2('goPlay2',()=>{home(0);tab(0)});on2('goTrivia',()=>{home(0);tab(1)});on2('goBK',()=>{home(0);tab(2)})}else draw()}
+function home(on){$('#home').hidden=!on;$('#app').hidden=on;document.body?.classList?.toggle('ingame',!on);$('#topcta').hidden=!on;if(on){$('#home').innerHTML=homeHtml;$('#date').textContent='The NFL connection game';fitN();on2('goPlay',()=>{home(0);tab(0)});on2('goPlay2',()=>{home(0);tab(0)});on2('goTrivia',()=>{home(0);tab(1)});on2('goBK',()=>{home(0);tab(2)});on2('repHome',()=>openReport(''));const d=$('#home details');if(d&&globalThis.innerWidth>=1000)d.open=true}else draw()}
 $('#logo').onclick=e=>{e.preventDefault();home(1)};
 function askFor(k){return k[0]=='#'?`Name anyone who wore <b>${k}</b>`:k[0]=='T'?`Name anyone who played for the <b>${lab(k)}</b>`:`Name anyone who went to <b>${lab(k)}</b>`}
 function fitN(){(document.querySelectorAll?.('.vs b')||[]).forEach(b=>{b.style.fontSize='';let f=parseFloat(getComputedStyle(b).fontSize);while(f>14&&b.scrollWidth>b.clientWidth+1)b.style.fontSize=(f-=1)+'px'})}
 const _draw=draw;draw=function(){_draw.apply(this,arguments);fitN()};globalThis.addEventListener?.('resize',fitN);
 if(typeof IntersectionObserver!='undefined')for(const[g,d]of[['#gH','#dockH'],['#gB','#dockB']])new IntersectionObserver(([e])=>$(d).classList.toggle('far',!e.isIntersecting)).observe($(g+' .board'));
+const HOW=[['Lateral',`<ol class="steps"><li><span>You get a <b>Start</b> player and a <b>Target</b> player. Connect them.</span></li><li><span>Name a <b>team</b>, <b>jersey number</b> or <b>college</b> the current player had, then name <b>another player</b> who shares it. That link is one lateral.</span></li><li><span>Keep going until you reach the Target. Each team, number and college can be used once.</span></li></ol>
+<p><b>Daily:</b> press Hike for an 8-second countdown. The players appear at 5 and the clock starts at 0. Fastest time wins. A wrong answer uses one of your 3 timeouts, and losing all 3 ends the drive.</p><p><b>Hard mode:</b> a different daily pair with two extra rules, shown before you start. <b>Unlimited:</b> a fresh random pair every time.</p><p>Each lateral earns a style badge, from <b>Gimme</b> for obvious links to <b>Legendary</b> for deep cuts.</p>`],
+['Trivia',`<ol class="steps"><li><span>You see one NFL player.</span></li><li><span>Guess a <b>jersey number</b> he wore, a <b>team</b> he played for and his <b>college</b>, all at once.</span></li><li><span>Correct answers turn <b>green</b> and lock in. Wrong ones turn red, so try again. You get <b>3 tries</b>.</span></li></ol><p>Stuck? Hints show his college's conference, then its school colors. <b>Daily</b> is the same player for everyone. <b>Unlimited</b> gives you a new one each time.</p>`],
+['Ball Knowledge',`<ol class="steps"><li><span>You start from a random <b>team</b>. Name a player who played for it.</span></li><li><span>Then name one of his other teams, numbers or colleges, then another player who shares it, and keep the chain going.</span></li><li><span>You get <b>30 seconds</b> per answer. A wrong answer or running out of time is a <b>strike</b>, and 3 strikes ends the run.</span></li></ol><p>Nothing can be used twice. Your score is how many players you name in a row. Beat your best.</p>`]];
+function howOpen(i){$('#hboxT').textContent='How to play '+HOW[i][0];$('#hbody').innerHTML=HOW[i][1];$('#hbox').hidden=false;$('#hclose').focus?.()}
+for(const b of document.querySelectorAll?.('.howb')||[])b.onclick=()=>howOpen(+b.dataset.how);
+for(const a of document.querySelectorAll?.('.howside')||[])a.innerHTML=`<h3>How to play</h3>${HOW[+a.dataset.how][1]}`;
+on2('hclose',()=>{$('#hbox').hidden=true});if($('#hbox'))$('#hbox').onclick=e=>{if(e.target.id=='hbox')$('#hbox').hidden=true};document.addEventListener?.('keydown',e=>{if(e.key=='Escape'&&$('#hbox'))$('#hbox').hidden=true});
 mode(0,0);tab(0);home(1);
 </script>
 
